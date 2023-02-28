@@ -1,0 +1,128 @@
+//colors
+$color-primary : #BBADFF;
+$color-secondary : #DAB6FC;
+$color-tercery : #B5446E;
+$color-font : #011627;
+$color-accessory : #000000;
+
+//font
+$font-title : Labrada;
+
+//css main page
+
+//body
+body {
+background-color: $color-primary;
+font-family: $font-title;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//header
+header 
+  {
+    background-size: cover;
+    height: 100vh;
+    box-shadow: 10px 0px 30px darken($color-primary, 50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+  }
+
+h1 
+{
+  font-size: 100px;
+  color: $color-font;
+  font-family: $font-title;
+}
+p 
+{
+  font-size: 40px;
+  color: $color-font;
+  text-align: center;
+}
+h2 
+{
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+//nav
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+}
+nav div {
+    box-shadow: 10px 0px 40px darken($color-secondary, 20);
+    border-radius: 30px;
+    background-color: $color-secondary;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transform: scale(1);
+    &:hover {
+        cursor: pointer;
+        background-color: darken($color-secondary, 4);
+        box-shadow: 10px 0px 40px lighten($color-secondary, 20);
+        transform: scale(1.1);
+    }
+}
+//présentation
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100vh;
+    }
+
+.about-a {
+    text-align: center;
+}
+      
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 80%;
+    max-width: 900px;
+    height: 400px;
+    margin: auto;
+    &-aside {
+        border: 0.2em solid black;
+    }
+}
+
+//footer
+footer {
+    background-color: $color-primary;
+    height: 10%;
+    width: 100%;
+    letter-spacing: 2px;
+    margin-top: 1em;
+    padding-top: 0.4em;
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    box-shadow: 10px 0px 30px darken($color-primary, 50%);
+}
+
+
+
+
