@@ -5,31 +5,152 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Fabienne LIS</title>
-    <link rel="stylesheet" href="css-sass/css/style.css">
+    <link rel="stylesheet" href="css-sass/sass/style.css">
 </head>
 <body>
     
-    <header>
-        <h1>Fabienne LIS</h1>
-        <h2>Développeuse HTML, CSS et Javascript</h2>
-    </header>
+  
+	<header id="accueil">
+		<h1>Fabienne Lis</h1>
+		<p>Développeuse d’application web</p>
+		<a class="about-a" href="https://www.linkedin.com/in/fabienne-lis-01743720a/">Mon profil LinkedIn</a>
 
-    <nav>
-       <ul>
-           <li><a href="">Accueil</a></li>
-           <li><a href="">Portfolio</a></li>
-           <li><a href="pages/FabienneLisSite.html">Curriculum Vitae</a></li>
-           <li><a href="mailto:fabienne.lis@gmail.com">Contact</a></li>
-       </ul> 
-    </nav>
-    <main class="wrapper">
-        <aside class="wrapper-aside">
-            aside
-        </aside>
-        <section class="wrapper-section">
-            section
-        </section>
-    </main>
+
+	</header>
+
+	<main>
+		<nav>
+				<a href="#accueil"> 
+					<p>Accueil</p>
+				</a>
+				<a href="#profil">
+					<p >Présentation</p>
+				</a>
+				<a href="#compétences">
+					<p>Compétences</p>
+				</a>
+				<a href="#portfolio">
+					<p>Portfolio</p>
+				</a>
+				<a href="#contact">
+					<p>Contact</p>
+				</a>
+				
+		</nav>
+		<section class="about" id="profil">
+	
+			<h2>Présentation</h2>
+			
+			<p>Bonjour ! Je suis Fabienne Lis <br/>
+			Après une formation en géographie et développement durable et des expériences
+			professionnels dans la sensibilisation et prévention des déchets. <br/> J’ai décidé de
+			développer d’autres compétences lié à l’informatique. Je m’intéresse à tout ce qui
+			est logiciel libre. Suite à de nombreuse reflexions et stage d’initiation. 
+			Je me suis lancé dans une formation de Développeuse d’application web.</p>
+			<a class="about-a" href="https://www.linkedin.com/in/fabienne-lis-01743720a/">Mon profil LinkedIn</a>
+	
+		</section>
+	
+
+		<section>
+		<section class="skills" id="compétences">
+	
+			<h2>Hard Skills</h2>
+		
+				<div class="skills-content">
+					<div class="skills-column">
+						<div class="progress-container">
+							<div>
+								<span class="progress-badge">HTML</span>
+								<span class="progress-value">60%</span>
+							</div> 
+							<div class="progress">
+								<div class="progress-bar" style="width: 60%;"></div>	
+							</div>
+						</div>
+						<!-- Fin .progress-container -->
+						<div class="progress-container">
+							<div>
+								<span class="progress-badge">Javascript</span>
+								<span class="progress-value">10%</span>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" style="width: 10%;"></div>
+							</div>
+						</div>
+						<!-- Fin .progress-container -->
+						<div class="progress-container">
+							<div>
+								<span class="progress-badge">Github</span>
+								<span class="progress-value">50%</span>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" style="width: 50%;"></div>
+							</div>
+						  </div>
+						<!-- Fin .progress-container -->
+						
+					</div>
+					<!-- Fin .skills-column -->
+					<div class="skills-column">
+						<div class="progress-container">
+							<div>
+								<span class="progress-badge">CSS</span>
+								<span class="progress-value">60%</span>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" style="width: 60%;"></div>
+							</div>
+						</div>
+						<!-- Fin .progress-container -->
+						<div class="progress-container">
+							<div>
+								<span class="progress-badge">Sass</span>
+								<span class="progress-value">60%</span>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" style="width: 60%;"></div>
+							</div>
+						</div>
+						<!-- Fin .progress-container -->
+						<div class="progress-container">
+							<div>
+								<span class="progress-badge">Scss</span>
+								<span class="progress-value">60%</span>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" style="width: 60%;"></div>
+							</div>
+						</div>
+						<!-- Fin .progress-container -->
+					</div>
+					<!-- Fin .skills-column -->
+				</div>
+		</section>
+
+
+		<section class="portfolio" id="portfolio">
+			<h2>Portfolio</h2>
+			<div class="project">
+				<div>
+					<h2>Booki</h2>
+					<h2>Ohmyfood</h2>
+				</div>
+				<div>
+					<h2>Portfolio</h2>
+					<h2>GameOn</h2>
+				</div>
+			</div>
+			
+
+		</section>
+
+		<section class="contact" id="contact">
+			<a href="mailto:fabienne.lis@gmail.com">Pour me contacter</a>
+		</section>
+
+	</main>
+	
     <footer>
        <p>&copy 2022 Fabienne LIS</p>
     </footer>
