@@ -14,6 +14,9 @@ $font-title : Labrada, 'Times New Roman';
 body {
 background-color: $color-primary;
 font-family: $font-title;
+margin: 0%;
+padding: 0%;
+margin-top: 20vh;
 }
 * {
     margin: 0;
@@ -46,8 +49,7 @@ h2
 header 
   {
     background-size: cover;
-    height: 100vh;
-    box-shadow: 10px 0px 30px darken($color-primary, 50%);
+    height: 80vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -67,7 +69,7 @@ nav {
     align-items: center;
     height: 20vh;
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0%;
 }
 nav a {
@@ -128,12 +130,11 @@ nav a {
     flex-direction: column;
 	align-items: center;
 	justify-content: center;
-    margin-top: 19vh;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 1%;
     height: 100vh;
-    width: 100%;
+    width: 98%;
 }
 
 .skills-content {
@@ -146,11 +147,11 @@ nav a {
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 100%;
+    width: 95%;
     margin: 0 auto 0 auto;
-    padding: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 2%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
 }
 .progress {
     display: flex;
@@ -190,34 +191,69 @@ nav a {
     display: flex;
     flex-direction: column;
 	align-items: center;
-	justify-content: center;
-    margin-top: 20vh;
-    height: 100vh;
+	justify-content: flex-end;
+    margin-bottom: 0;
+    height: 80vh;
     width: 100%;
 }
 .project {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-1 .project-2 {
+    width: 50%;
+    height: auto;
+    margin: 0%;
+    padding: 0%;
+}
+.project-title {
+    margin: 0%;
+    height: auto;
+    margin: 10px;
+}
+.container-image {
+    width: 100%;
+    height: 15vh;
+    object-fit: cover;
+}
+.container-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 //contact
 .contact {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     text-decoration: none;
-    box-shadow: 10px 0px 30px darken($color-primary, 50%);
 }
 .contact a {
     text-decoration: none;
     color: $color-font;
+    box-shadow: 10px 0px 40px darken($color-secondary, 20);
+    border-radius: 30px;
+    background-color: $color-secondary;
+    padding: 30px;
+    transform: scale(1);
+    &:hover {
+        cursor: pointer;
+        background-color: darken($color-secondary, 4);
+        box-shadow: 10px 0px 40px lighten($color-secondary, 20);
+        transform: scale(1.1);
+    }
 }
 
 //footer
 footer {
     background-color: $color-primary;
-    height: 10%;
+    height: 20vh;
     width: 100%;
     letter-spacing: 2px;
     margin-top: 1em;
