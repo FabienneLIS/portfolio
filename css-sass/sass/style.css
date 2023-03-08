@@ -275,10 +275,9 @@ header h1 {
 }
 @media screen and (max-width: 550px) {
   .project {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
   }
 }
 
