@@ -199,16 +199,20 @@ header
     width: 80%;
     height: 100vh;
     @include mobile-only {
-        width: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     }
-
     .about h2 {
         text-align: center;
     }
-.about-a {
+    .about p {
+        text-align: center;
+    }
+    .about-a {
     text-align: center;
-}
+    }
       
 .wrapper {
     display: grid;

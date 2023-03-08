@@ -163,11 +163,17 @@ header h1 {
 }
 @media screen and (max-width: 550px) {
   .about {
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .about h2 {
+  text-align: center;
+}
+
+.about p {
   text-align: center;
 }
 
