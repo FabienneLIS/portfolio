@@ -282,11 +282,11 @@ header h1 {
 }
 
 .projet-container {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   transform: scale(1);
 }
 .projet-container:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .project-title {
