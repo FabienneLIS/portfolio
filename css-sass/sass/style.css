@@ -1,6 +1,6 @@
 body {
   background-color: #BBADFF;
-  font-family: Labrada, "Times New Roman";
+  font-family: "Libre Baskerville", "Times New Roman";
 }
 @media screen and (max-width: 1800px) {
   body {
@@ -14,6 +14,8 @@ body {
 }
 
 a {
+  color: #000000;
+  font-family: "Libre Baskerville", "Times New Roman";
   font-size: 20px;
 }
 
@@ -25,6 +27,7 @@ h1 {
 p {
   font-size: 20px;
   color: #000000;
+  font-family: "Libre Baskerville", "Times New Roman";
   text-align: center;
 }
 
@@ -32,6 +35,12 @@ h2 {
   font-size: 30px;
   letter-spacing: 4px;
   margin-bottom: 4%;
+}
+@media screen and (max-width: 652px) {
+  h2 {
+    font-size: 26px;
+    margin: 0px;
+  }
 }
 
 main {
@@ -52,9 +61,9 @@ nav {
   z-index: 3;
   opacity: 0.98;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 652px) {
   nav {
-    height: 4vh;
+    height: auto;
     background-color: #BBADFF;
     opacity: 1;
   }
@@ -62,20 +71,32 @@ nav {
 
 .nav-menu {
   display: none;
+  transform: scale(1);
 }
-@media screen and (max-width: 550px) {
+.nav-menu:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 652px) {
   .nav-menu {
-    margin-top: 20px;
+    border: solid 2px #DAB6FC;
+    box-shadow: 10px 0px 40px #a854f8;
+    background-color: #DAB6FC;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: block;
-    height: 4vh;
+    height: auto;
+    width: 50%;
+    height: 50px;
     z-index: 4;
   }
 }
 
-.nav-link h2 {
-  width: 7em;
-  height: 3.8vh;
-  background-color: #DAB6FC;
+.nav-menu h2 {
+  text-align: center;
+  margin: auto;
+  width: auto;
   z-index: 4;
 }
 
@@ -85,45 +106,46 @@ nav {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 652px) {
   .nav-link {
-    overflow: hidden;
+    display: none;
     flex-direction: column;
-    height: 20vh;
-    margin-top: 4vh;
+    height: auto;
+    width: 100%;
+    background-color: #BBADFF;
   }
 }
 
-.nav-link a {
+.link-choose {
   box-shadow: 10px 0px 40px #a854f8;
+  border: none;
   border-radius: 30px;
   background-color: #DAB6FC;
-  text-decoration: none;
   flex-wrap: wrap;
-  margin-left: 4%;
-  margin-right: 4%;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-top: 0.4em;
-  padding-bottom: 0.4em;
-  font-size: 20px;
+  margin: 4% 2%;
+  padding: 2% 1%;
   transform: scale(1);
 }
-@media screen and (max-width: 550px) {
-  .nav-link a {
-    width: 6.6em;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+@media screen and (max-width: 652px) {
+  .link-choose {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-size: 10px;
+    margin: 4px auto;
+    padding: 0.2em 0.5em;
     background-color: #DAB6FC;
   }
 }
-.nav-link a:hover {
+.link-choose:hover {
   cursor: pointer;
   background-color: #d0a2fb;
   box-shadow: 10px 0px 40px white;
   transform: scale(1.1);
+}
+
+.link-choose a {
+  text-decoration: none;
 }
 
 header {
@@ -146,7 +168,7 @@ header h1 {
     font-size: 4em;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 652px) {
   header h1 {
     font-size: 2em;
   }
@@ -161,7 +183,7 @@ header h1 {
   width: 80%;
   height: 100vh;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 652px) {
   .about {
     width: 90%;
     margin-left: auto;
@@ -279,7 +301,7 @@ header h1 {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 652px) {
   .project {
     display: grid;
     grid-template-columns: 100%;
