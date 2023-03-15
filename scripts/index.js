@@ -14,14 +14,24 @@ linkChoose.forEach((choose) => choose.addEventListener("click", closeMobileNav))
 //modal form
 
 function openMobileNav() {
-    navBar.style.display = "block";
-    menuNav.style.display = "none";
-    console.log("fonction");
-}
+    if(window.innerWidth<771) {
+            navBar.style.display = "block";
+            menuNav.style.display = "none";
+            console.log("fonction");
+        } else {
+            false
+        } 
+    }
+ 
 
 function closeMobileNav() {
-    navBar.style.display = "none";
-    menuNav.style.display = "block"; 
-    console.log("fermer");
-}
+    if(window.innerWidth<771) {
+            navBar.style.display = "none";
+            menuNav.style.display = "block"; 
+            console.log("fermer");
+        } else {
+            false
+        }
+    }
+
 

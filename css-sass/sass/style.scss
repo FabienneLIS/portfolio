@@ -15,7 +15,7 @@ $breakpointst:
 (tablette: 950px);
 
 $breakpoints:
-(mobile: 652px);
+(mobile: 770px);
 
 $breakpointsmax:
 (max: 1800px);
@@ -54,6 +54,9 @@ font-family: $font-text;
 @include max-only {
     max-width: 1800px;
 }
+@include mobile-only {
+    padding: 0% 10%;
+}
 }
 * {
     margin: 0;
@@ -76,6 +79,9 @@ p
   color: $color-font;
   font-family: $font-text;
   text-align: center;
+  @include mobile-only {
+    font-size: 14px;
+  }
 }
 h2 
 {
@@ -110,6 +116,7 @@ nav {
     z-index: 3;
     opacity: 0.98;
     @include mobile-only {
+        width: 100%;
         height: auto;
         background-color: $color-primary;
         opacity: 1;
@@ -162,8 +169,8 @@ nav {
     border-radius: 30px;
     background-color: $color-secondary;
     flex-wrap: wrap;
-    margin: 4% 2%;
-    padding: 2% 1%;
+    margin: 4% 1%;
+    padding: 0.5em 1.4em;
     transform: scale(1);
     @include mobile-only {
         display: flex;
@@ -217,12 +224,7 @@ header
     margin-right: auto;
     width: 80%;
     height: 100vh;
-    @include mobile-only {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    }
+}
     .about h2 {
         text-align: center;
     }
@@ -257,6 +259,12 @@ header
     padding: 0.5vh;
     height: 100vh;
     width: 98%;
+    @include mobile-only {
+        width: 100%;
+        padding: 0vh;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
 }
 
 .skills-content {
@@ -264,6 +272,12 @@ header
     flex-direction: row;
     width: 80%;
     box-shadow: 10px 0px 40px darken($color-secondary, 20);
+    @include mobile-only {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        width: 100%;
+    }
 }
 .skills-column {
     display: flex;
@@ -370,8 +384,9 @@ header
     height: 100vh;
     text-decoration: none;
 }
-.contact a {
+.contact-button {
     text-decoration: none;
+    border: none;
     color: $color-font;
     box-shadow: 10px 0px 40px darken($color-secondary, 20);
     border-radius: 30px;
@@ -386,6 +401,10 @@ header
     }
 }
 
+.contact-button a {
+    text-decoration: none;
+}
+
 //footer
 footer {
     background-color: $color-primary;
@@ -398,7 +417,3 @@ footer {
     bottom: 0px;
     text-align: center;
 }
-
-
-
-
