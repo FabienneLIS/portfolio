@@ -100,7 +100,7 @@ nav {
     }
     @include mobile-only {
         border: solid 2px $color-secondary;
-        box-shadow: 10px 0px 40px darken($color-secondary, 20);
+        box-shadow: 0px 0px 40px darken($color-secondary, 20);
         background-color: $color-secondary;
         border-radius: 30px;
         margin-top: 10px;
@@ -132,7 +132,7 @@ nav {
     }
 }
 .link-choose {
-    box-shadow: 10px 0px 40px darken($color-secondary, 20);
+    box-shadow: 0px 0px 40px darken($color-secondary, 20);
     border: none;
     border-radius: 30px;
     background-color: $color-secondary;
@@ -152,7 +152,7 @@ nav {
     &:hover {
         cursor: pointer;
         background-color: darken($color-secondary, 4);
-        box-shadow: 10px 0px 40px lighten($color-secondary, 20);
+        box-shadow: 0px 0px 40px lighten($color-secondary, 20);
         transform: scale(1.1);
     }
 }
@@ -199,18 +199,18 @@ header
     height: 100vh;
     
 }
-    .about h2 {
-        text-align: center;
-        background-color: $color-back;
-    }
-    .about p {
-        text-align: center;
-        background-color: $color-back;
-    }
-    .about-a {
+.about h2 {
     text-align: center;
     background-color: $color-back;
-    }
+}
+.about p {
+    text-align: center;
+    background-color: $color-back;
+}
+.about-a {
+text-align: center;
+background-color: $color-back;
+}
       
 .wrapper {
     display: grid;
@@ -252,7 +252,7 @@ header
     display: flex;
     flex-direction: row;
     width: 80%;
-    box-shadow: 10px 0px 40px darken($color-secondary, 20);
+    box-shadow: 0px 0px 40px darken($color-secondary, 20);
     background-color: $color-back;
     @include mobile-only {
         display: flex;
@@ -386,7 +386,7 @@ header
     text-decoration: none;
     border: none;
     color: $color-font;
-    box-shadow: 10px 0px 40px darken($color-secondary, 20);
+    box-shadow: 0px 0px 40px darken($color-secondary, 20);
     border-radius: 30px;
     background-color: $color-secondary;
     padding: 30px;
@@ -394,7 +394,7 @@ header
     &:hover {
         cursor: pointer;
         background-color: darken($color-secondary, 4);
-        box-shadow: 10px 0px 40px lighten($color-secondary, 20);
+        box-shadow: 0px 0px 40px lighten($color-secondary, 20);
         transform: scale(1.1);
     }
 }
