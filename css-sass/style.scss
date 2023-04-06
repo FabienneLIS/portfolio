@@ -86,7 +86,7 @@ nav {
     @include mobile-only {
         width: 100%;
         height: auto;
-        background-color: $color-primary;
+        background-color: $color-back-section;
         opacity: 1;
     }
 }
