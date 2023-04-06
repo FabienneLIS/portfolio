@@ -183,6 +183,10 @@ header h1 {
   }
 }
 
+header p {
+  background-color: rgba(228, 214, 255, 0.6);
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -312,7 +316,7 @@ header h1 {
   align-items: center;
   justify-content: center;
   margin-bottom: 0;
-  height: auto;
+  height: 100vh;
   width: 100%;
 }
 @media screen and (max-width: 770px) {
@@ -324,12 +328,16 @@ header h1 {
   }
 }
 
+.portfolio h2 {
+  background-color: rgba(228, 214, 255, 0.6);
+}
+
 .project {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% auto;
+  grid-template-rows: auto;
   justify-items: center;
-  width: 60%;
+  width: 48%;
   height: auto;
   margin-top: 20px;
   margin-left: auto;
@@ -340,7 +348,7 @@ header h1 {
     display: grid;
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-rows: 25% auto;
   }
 }
 
@@ -355,6 +363,7 @@ header h1 {
 }
 .projet-container:hover {
   transform: scale(1.04);
+  cursor: pointer;
 }
 
 .project-title {

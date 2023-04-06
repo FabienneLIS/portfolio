@@ -184,6 +184,10 @@ header
         font-size: 2em;
     }
   }
+
+  header p {
+    background-color: $color-back;
+  }
 //présentation
 .about {
     display: flex;
@@ -308,7 +312,7 @@ header
 	align-items: center;
 	justify-content: center;
     margin-bottom: 0;
-    height: auto;
+    height: 100vh;
     width: 100%;
     @include mobile-only {
         width: 80%;
@@ -318,12 +322,15 @@ header
     }
 }
 
+.portfolio h2 {
+    background-color: $color-back;
+}
 .project {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% auto;
+    grid-template-rows: auto;
     justify-items: center;
-    width: 60%;
+    width: 48%;
     height: auto;
     margin-top: 20px;
     margin-left: auto;
@@ -332,7 +339,7 @@ header
         display: grid;
         width: 100%;
         grid-template-columns: 100%;
-        grid-template-rows: 25% 25% 25% 25%; 
+        grid-template-rows: 25% auto; 
     }
 }
 
@@ -346,6 +353,7 @@ header
     box-shadow: 0px 0px 20px darken($color-secondary, 30);
     &:hover {
         transform: scale(1.04);
+        cursor: pointer;
     }
 }
 .project-title {
