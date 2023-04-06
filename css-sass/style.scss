@@ -2,10 +2,11 @@
 
 //colors
 
-$color-primary : #BBADFF;
+$color-primary : rgb(187, 173, 255);
 $color-secondary : #DAB6FC;
 $color-tercery : #B5446E;
-$color-items : #011627;
+$color-back : rgb(228, 214, 255, 0.6);
+$color-back-section : lighten(rgb(187, 173, 255, 0.8), 4);
 $color-font : #000000;
 
 //font
@@ -17,7 +18,8 @@ $font-text : 'Libre Baskerville', 'Times New Roman';
 
 //body
 body {
-background-color: $color-primary;
+background-image: url(../media/code\ binaire.png);
+background-attachment: fixed;
 font-family: $font-text;
 padding: 0%;
 @include max-only {
@@ -78,7 +80,7 @@ nav {
     width: 100%;
     position: sticky;
     top: 0%;
-    background-color: $color-primary;
+    background-color: $color-back-section;
     z-index: 3;
     opacity: 0.98;
     @include mobile-only {
@@ -162,7 +164,7 @@ nav {
 header 
   {
     background-size: cover;
-    height: 100vh;
+    height: 88vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -174,6 +176,7 @@ header
 
   header h1 {
     font-size: 8em;
+    background-color: $color-back;
     @include tablette-only {
         font-size: 4em;
     }
@@ -190,15 +193,19 @@ header
     margin-right: auto;
     width: 80%;
     height: 100vh;
+    
 }
     .about h2 {
         text-align: center;
+        background-color: $color-back;
     }
     .about p {
         text-align: center;
+        background-color: $color-back;
     }
     .about-a {
     text-align: center;
+    background-color: $color-back;
     }
       
 .wrapper {
@@ -233,11 +240,16 @@ header
     }
 }
 
+.skills h2 {
+    background-color: $color-back;
+}
+
 .skills-content {
     display: flex;
     flex-direction: row;
     width: 80%;
     box-shadow: 10px 0px 40px darken($color-secondary, 20);
+    background-color: $color-back;
     @include mobile-only {
         display: flex;
         flex-direction: column;
@@ -385,7 +397,7 @@ header
 
 //footer
 footer {
-    background-color: $color-primary;
+    background-color: $color-back-section;
     height: 5vh;
     width: 100%;
     letter-spacing: 2px;

@@ -1,5 +1,6 @@
 body {
-  background-color: #BBADFF;
+  background-image: url(../media/code\ binaire.png);
+  background-attachment: fixed;
   font-family: "Libre Baskerville", "Times New Roman";
   padding: 0%;
 }
@@ -63,7 +64,7 @@ nav {
   width: 100%;
   position: sticky;
   top: 0%;
-  background-color: #BBADFF;
+  background-color: rgba(204, 193, 255, 0.8);
   z-index: 3;
   opacity: 0.98;
 }
@@ -71,7 +72,7 @@ nav {
   nav {
     width: 100%;
     height: auto;
-    background-color: #BBADFF;
+    background-color: rgb(187, 173, 255);
     opacity: 1;
   }
 }
@@ -119,7 +120,7 @@ nav {
     flex-direction: column;
     height: auto;
     width: 100%;
-    background-color: #BBADFF;
+    background-color: rgb(187, 173, 255);
   }
 }
 
@@ -157,7 +158,7 @@ nav {
 
 header {
   background-size: cover;
-  height: 100vh;
+  height: 88vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,6 +170,7 @@ header {
 
 header h1 {
   font-size: 8em;
+  background-color: rgba(228, 214, 255, 0.6);
 }
 @media screen and (max-width: 950px) {
   header h1 {
@@ -193,14 +195,17 @@ header h1 {
 
 .about h2 {
   text-align: center;
+  background-color: rgba(228, 214, 255, 0.6);
 }
 
 .about p {
   text-align: center;
+  background-color: rgba(228, 214, 255, 0.6);
 }
 
 .about-a {
   text-align: center;
+  background-color: rgba(228, 214, 255, 0.6);
 }
 
 .wrapper {
@@ -235,11 +240,16 @@ header h1 {
   }
 }
 
+.skills h2 {
+  background-color: rgba(228, 214, 255, 0.6);
+}
+
 .skills-content {
   display: flex;
   flex-direction: row;
   width: 80%;
   box-shadow: 10px 0px 40px #a854f8;
+  background-color: rgba(228, 214, 255, 0.6);
 }
 @media screen and (max-width: 770px) {
   .skills-content {
@@ -401,7 +411,7 @@ header h1 {
 }
 
 footer {
-  background-color: #BBADFF;
+  background-color: rgba(204, 193, 255, 0.8);
   height: 5vh;
   width: 100%;
   letter-spacing: 2px;
