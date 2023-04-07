@@ -348,7 +348,7 @@ background-color: $color-back;
     margin-left: 15px;
     margin-right: 15px;
     transform: scale(1);
-    background-color: $color-secondary;
+    background-color: $color-back;
     border: solid 2px $color-secondary;
     box-shadow: 0px 0px 20px darken($color-secondary, 30);
     &:hover {
