@@ -10,8 +10,8 @@ $color-back-section : lighten(rgb(187, 173, 255, 0.8), 4);
 $color-font : #000000;
 
 //font
-$font-title : Labrada, 'Times New Roman';
-$font-text : 'Libre Baskerville', 'Times New Roman';
+$font-title : Philosopher, Labrada, 'Times New Roman';
+$font-text : Amaranth,'Libre Baskerville', 'Times New Roman';
 
 
 //css main page
@@ -43,7 +43,7 @@ h1
 }
 p 
 {
-  font-size: 1.25em;
+  font-size: 1.30em;
   color: $color-font;
   font-family: $font-text;
   text-align: center;
@@ -53,7 +53,7 @@ p
 }
 h2 
 {
-    font-size: 1.875em;
+    font-size: 2.2em;
     letter-spacing: 0.25em;
     margin-bottom: 4%;
     @include mobile-only {
@@ -102,7 +102,7 @@ nav {
         border: solid 2px $color-secondary;
         box-shadow: 0px 0px 40px darken($color-secondary, 20);
         background-color: $color-secondary;
-        border-radius: 30px;
+        border-radius: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
         display: block;
@@ -134,7 +134,7 @@ nav {
 .link-choose {
     box-shadow: 0px 0px 40px darken($color-secondary, 20);
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: $color-secondary;
     flex-wrap: wrap;
     margin: 4% 1%;
@@ -144,16 +144,17 @@ nav {
         display: flex;
         flex-direction: column;
         width: 60%;
+        border-radius: 0px;
         font-size: 10px;
-        margin: 4px auto;
-        padding: 0.2em 0.50em;
+        margin: 0px auto;
+        padding: 0.6em 0.50em;
         background-color: $color-secondary;
     }
     &:hover {
         cursor: pointer;
         background-color: darken($color-secondary, 4);
         box-shadow: 0px 0px 40px lighten($color-secondary, 20);
-        transform: scale(1.1);
+        transform: scale(1.01);
     }
 }
 .link-choose a {
@@ -164,7 +165,7 @@ nav {
 header 
   {
     background-size: cover;
-    height: 88vh;
+    height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -193,10 +194,11 @@ header
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    height: 100vh;
+    height: 80vh;
     
 }
 .about h2 {
@@ -349,7 +351,7 @@ background-color: $color-back;
     margin-right: 15px;
     transform: scale(1);
     background-color: $color-back;
-    border: solid 2px $color-secondary;
+    border: solid 4px $color-secondary;
     box-shadow: 0px 0px 20px darken($color-secondary, 30);
     &:hover {
         transform: scale(1.04);
@@ -377,6 +379,7 @@ background-color: $color-back;
 //contact
 .contact {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -387,9 +390,10 @@ background-color: $color-back;
     border: none;
     color: $color-font;
     box-shadow: 0px 0px 40px darken($color-secondary, 20);
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: $color-secondary;
     padding: 30px;
+    margin: 2em 0em;
     transform: scale(1);
     &:hover {
         cursor: pointer;
