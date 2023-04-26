@@ -10,8 +10,8 @@ $color-back-section : lighten(rgb(187, 173, 255, 0.8), 4);
 $color-font : #000000;
 
 //font
-$font-title : Philosopher, Labrada, 'Times New Roman';
-$font-text : Amaranth,'Libre Baskerville', 'Times New Roman';
+$font-title : "Tenor Sans","Andika New Basic", 'Times New Roman';
+$font-text :  "Fira Sans Condensed, Light",Roboto, 'Times New Roman';
 
 
 //css main page
@@ -384,6 +384,10 @@ background-color: $color-back;
     align-items: center;
     height: 100vh;
     text-decoration: none;
+}
+
+.contact h2 {
+    background-color: $color-back;
 }
 .contact-button {
     text-decoration: none;

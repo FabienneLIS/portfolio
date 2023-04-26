@@ -1,7 +1,7 @@
 body {
   background-image: url(../media/codebinaire.png);
   background-attachment: fixed;
-  font-family: Amaranth, "Libre Baskerville", "Times New Roman";
+  font-family: "Fira Sans Condensed, Light", Roboto, "Times New Roman";
   padding: 0%;
 }
 @media screen and (max-width: 1800px) {
@@ -17,19 +17,19 @@ body {
 
 a {
   color: #000000;
-  font-family: Amaranth, "Libre Baskerville", "Times New Roman";
+  font-family: "Fira Sans Condensed, Light", Roboto, "Times New Roman";
   font-size: 1.3em;
 }
 
 h1 {
   color: #000000;
-  font-family: Philosopher, Labrada, "Times New Roman";
+  font-family: "Tenor Sans", "Andika New Basic", "Times New Roman";
 }
 
 p {
   font-size: 1.3em;
   color: #000000;
-  font-family: Amaranth, "Libre Baskerville", "Times New Roman";
+  font-family: "Fira Sans Condensed, Light", Roboto, "Times New Roman";
   text-align: center;
 }
 @media screen and (max-width: 770px) {
@@ -398,6 +398,10 @@ header p {
   align-items: center;
   height: 100vh;
   text-decoration: none;
+}
+
+.contact h2 {
+  background-color: rgba(228, 214, 255, 0.6);
 }
 
 .contact-button {
