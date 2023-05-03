@@ -1,8 +1,11 @@
 body {
+  background-color: rgb(187, 173, 255);
   background-image: url(../media/codebinaire.png);
   background-attachment: fixed;
+  background-repeat: no-repeat;
   font-family: "Fira Sans Condensed, Light", Roboto, "Times New Roman";
   padding: 0%;
+  scroll-margin-top: 15vh;
 }
 @media screen and (max-width: 1800px) {
   body {
@@ -160,6 +163,7 @@ nav {
 header {
   background-size: cover;
   height: 100vh;
+  margin: 0%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,15 +195,16 @@ header p {
 .about {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: flex-end;
+  margin: 5% auto 5% auto;
+  scroll-margin-top: 10vh;
   width: 80%;
-  height: 80vh;
+  height: 90%;
 }
 
 .about h2 {
   text-align: center;
+  justify-content: center;
   background-color: rgba(228, 214, 255, 0.6);
 }
 
@@ -230,11 +235,11 @@ header p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0.5vh;
-  height: 100vh;
+  padding: 2%;
+  height: 70%;
   width: 98%;
+  margin: 15% auto 15% auto;
+  scroll-margin-top: 10vh;
 }
 @media screen and (max-width: 770px) {
   .skills {
@@ -316,9 +321,10 @@ header p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0;
-  height: 100vh;
+  margin: 5% auto 5% auto;
+  height: 90%;
   width: 100%;
+  scroll-margin-top: 10vh;
 }
 @media screen and (max-width: 770px) {
   .portfolio {
@@ -396,7 +402,9 @@ header p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 70%;
+  margin: 30% auto 0 auto;
+  scroll-margin-top: 10vh;
   text-decoration: none;
 }
 
@@ -428,7 +436,7 @@ header p {
 
 footer {
   background-color: rgba(204, 193, 255, 0.8);
-  height: 5vh;
+  height: 10%;
   width: 100%;
   letter-spacing: 2px;
   margin-top: 1em;
@@ -436,4 +444,10 @@ footer {
   position: sticky;
   bottom: 0px;
   text-align: center;
+  align-items: center;
+}
+
+footer p {
+  height: 100%;
+  margin: auto 0 auto 0;
 }/*# sourceMappingURL=style.css.map */
