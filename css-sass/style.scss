@@ -1,4 +1,5 @@
 @import "./Utils/responsives";
+@import "./Utils/keyframes";
 
 //colors
 
@@ -16,6 +17,35 @@ $font-text :  "Fira Sans Condensed, Light",Roboto, 'Times New Roman';
 
 //css main page
 
+//loader
+/*.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: 100;
+    background-color: lighten($color-tercery, 10);
+}
+.cercle1, .cercle2{
+    left: 0%;
+    top: 0%;
+    border: solid 2em black;
+    
+}
+.cercle1 {
+    width: 20em;
+    height: 20em;
+    border-radius: 20em;
+}
+
+.cercle2 {
+    width: 10em;
+    height: 10em;
+    border-radius: 10em;
+}*/
 //body
 body {
     background-color: $color-primary;
@@ -31,6 +61,7 @@ body {
     @include mobile-only {
         padding: 0% 0%;
     }
+    @include open_screen-anim;
 }
 
 a {
@@ -333,34 +364,46 @@ background-color: $color-back;
     background-color: $color-back;
 }
 .project {
-    display: grid;
-    grid-template-columns: 50% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
-    justify-items: center;
-    width: 48%;
+    justify-items: center;*/
+    width: 90%;
     height: auto;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto; 
     @include mobile-only {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        grid-template-columns: 100%;
-        grid-template-rows: 25% auto; 
+        height: auto;
+        /*grid-template-columns: 100%;
+        grid-template-rows: 25% auto;*/
     }
 }
 
 .projet-container {
+    width: 25%;
+    height: auto;
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
-    transform: scale(1);
     background-color: $color-back;
     border: solid 4px $color-secondary;
     box-shadow: 0px 0px 20px darken($color-secondary, 30);
+    object-fit: cover;
+    @include mobile-only {
+        width: 100%;
+        margin: 4% auto;
+    }
     &:hover {
-        transform: scale(1.04);
         cursor: pointer;
+        @include select--portfolio;
     }
 }
 .project-title {
@@ -378,7 +421,6 @@ background-color: $color-back;
 .container-image img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
     object-position: top;
 }
 //contact
