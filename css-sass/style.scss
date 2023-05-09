@@ -1,6 +1,10 @@
 @import "./Utils/responsives";
 @import "./Utils/keyframes";
 
+@import "./Layouts/body";
+@import "./Layouts/footer";
+
+/*@import "./Layouts/loader";*/
 //colors
 
 $color-primary : rgb(187, 173, 255);
@@ -11,89 +15,12 @@ $color-back-section : lighten(rgb(187, 173, 255, 0.8), 4);
 $color-font : #000000;
 
 //font
-$font-title : "Tenor Sans","Andika New Basic", 'Times New Roman';
-$font-text :  "Fira Sans Condensed, Light",Roboto, 'Times New Roman';
+$font-title : "Tenor Sans","Andika New Basic", Arial, Helvetica, sans-serif;
+$font-text :  "Fira Sans Condensed, Light",Arial, Helvetica, sans-serif;
 
 
 //css main page
 
-//loader
-/*.loader {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    opacity: 0.9;
-    z-index: 100;
-    background-color: lighten($color-tercery, 10);
-}
-.cercle1, .cercle2{
-    left: 0%;
-    top: 0%;
-    border: solid 2em black;
-    
-}
-.cercle1 {
-    width: 20em;
-    height: 20em;
-    border-radius: 20em;
-}
-
-.cercle2 {
-    width: 10em;
-    height: 10em;
-    border-radius: 10em;
-}*/
-//body
-body {
-    background-color: $color-primary;
-    background-image: url(../media/codebinaire.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    font-family: $font-text;
-    padding: 0%;
-    scroll-margin-top: 15vh;
-    @include max-only {
-        max-width: 1800px;
-    }
-    @include mobile-only {
-        padding: 0% 0%;
-    }
-    @include open_screen-anim;
-}
-
-a {
-    color: $color-font;
-    font-family: $font-text;
-    font-size: 1.30em;
-}
-h1 
-{
-  color: $color-font;
-  font-family: $font-title;
-}
-p 
-{
-  font-size: 1.30em;
-  color: $color-font;
-  font-family: $font-text;
-  text-align: center;
-  @include mobile-only {
-    font-size: 14px;
-  }
-}
-h2 
-{
-    font-size: 2.2em;
-    letter-spacing: 0.25em;
-    margin-bottom: 4%;
-    @include mobile-only {
-        font-size: 26px;
-        margin: 0px;
-    }
-}
 
 //main
 
@@ -128,8 +55,8 @@ nav {
     display: none;
     transform: scale(1);
     &:hover {
-    cursor: pointer;
-    transform: scale(1.1);
+        cursor: pointer;
+        transform: scale(1.1);
     }
     @include mobile-only {
         border: solid 2px $color-secondary;
@@ -189,11 +116,13 @@ nav {
         box-shadow: 0px 0px 40px lighten($color-secondary, 20);
         transform: scale(1.01);
     }
+    &:active {
+        @include open_screen-anim;
+    }
 }
 .link-choose a {
     text-decoration: none;
 }
-
 //header
 header 
   {
@@ -270,7 +199,7 @@ background-color: $color-back;
 	justify-content: center;
     padding: 2%;
     height: 70%;
-    width: 98%;
+    width: 70%;
     margin: 15% auto 15% auto;
     scroll-margin-top: 10vh;
     @include mobile-only {
@@ -294,7 +223,7 @@ background-color: $color-back;
     @include mobile-only {
         display: flex;
         flex-direction: column;
-        margin-top: 2em;
+        margin-bottom: 2em;
         width: 100%;
     }
 }
@@ -369,9 +298,6 @@ background-color: $color-back;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /*grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto;
-    justify-items: center;*/
     width: 90%;
     height: auto;
     margin-top: 20px;
@@ -382,8 +308,6 @@ background-color: $color-back;
         flex-direction: column;
         width: 100%;
         height: auto;
-        /*grid-template-columns: 100%;
-        grid-template-rows: 25% auto;*/
     }
 }
 
@@ -429,8 +353,8 @@ background-color: $color-back;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70%;
-    margin: 30% auto 0 auto;
+    height: 90%;
+    margin: 10% auto 0 auto;
     scroll-margin-top: 10vh;
     text-decoration: none;
 }
@@ -439,6 +363,7 @@ background-color: $color-back;
     background-color: $color-back;
 }
 .contact-button {
+    width: 16em;
     text-decoration: none;
     border: none;
     color: $color-font;
@@ -458,22 +383,4 @@ background-color: $color-back;
 
 .contact-button a {
     text-decoration: none;
-}
-
-//footer
-footer {
-    background-color: $color-back-section;
-    height: 10%;
-    width: 100%;
-    letter-spacing: 2px;
-    margin-top: 1em;
-    padding-top: 0.4em;
-    position: sticky;
-    bottom: 0px;
-    text-align: center;
-    align-items: center;
-}
-footer p {
-    height: 100%;
-    margin: auto 0 auto 0;
 }

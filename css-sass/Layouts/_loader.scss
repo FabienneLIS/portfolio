@@ -1,0 +1,66 @@
+//loader page
+.loader {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    transform-origin: center;
+    width: 100vw;
+    height: auto;
+    background-color:  rgb(218, 182, 252, 0.9);
+    animation: appear-loader 4s cubic-bezier(.36,-0.13,.25,.97) forwards;
+    z-index: 5;
+}
+//loader cercle
+.cercle {
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    position: relative;
+    z-index: 6;
+    color: #B5446E;
+  }
+  .cercle::after,
+  .cercle::before {
+    content: '';  
+    box-sizing: border-box;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    background: #B5446E;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animloader 2s linear infinite;
+  }
+  .cercel::after {
+    animation-delay: 0.4s;
+  }
+  
+
+//animation
+
+//animation cercle
+  @keyframes animloader {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+
+  //animation loader page
+  @keyframes appear-loader {
+    0% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1);
+    }
+    100% {
+        transform:scale(0);
+    }
+  }
+    
