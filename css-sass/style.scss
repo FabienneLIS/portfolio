@@ -1,22 +1,12 @@
 @import "./Utils/responsives";
 @import "./Utils/keyframes";
+@import "./Utils/colors";
+@import "./Utils/font-family";
 
 @import "./Layouts/body";
 @import "./Layouts/footer";
 
 /*@import "./Layouts/loader";*/
-//colors
-
-$color-primary : rgb(187, 173, 255);
-$color-secondary : #DAB6FC;
-$color-tercery : #B5446E;
-$color-back : rgb(228, 214, 255, 0.6);
-$color-back-section : lighten(rgb(187, 173, 255, 0.8), 4);
-$color-font : #000000;
-
-//font
-$font-title : "Tenor Sans","Andika New Basic", Arial, Helvetica, sans-serif;
-$font-text :  "Fira Sans Condensed, Light",Arial, Helvetica, sans-serif;
 
 
 //css main page
@@ -97,8 +87,8 @@ nav {
     border-radius: 10px;
     background-color: $color-secondary;
     flex-wrap: wrap;
-    margin: 4% 1%;
-    padding: 0.5em 1.4em;
+    margin: 4% 2%;
+    padding: 0.8em 1.4em;
     transform: scale(1);
     @include mobile-only {
         display: flex;
@@ -112,12 +102,11 @@ nav {
     }
     &:hover {
         cursor: pointer;
+        outline: 2px solid $color-secondary;
+        outline-offset: 0.2em;
         background-color: darken($color-secondary, 4);
         box-shadow: 0px 0px 40px lighten($color-secondary, 20);
         transform: scale(1.01);
-    }
-    &:active {
-        @include open_screen-anim;
     }
 }
 .link-choose a {
@@ -220,7 +209,7 @@ background-color: $color-back;
     width: 80%;
     box-shadow: 0px 0px 40px darken($color-secondary, 20);
     background-color: $color-back;
-    @include mobile-only {
+    @include tablette-only {
         display: flex;
         flex-direction: column;
         margin-bottom: 2em;
@@ -321,14 +310,18 @@ background-color: $color-back;
     border: solid 4px $color-secondary;
     box-shadow: 0px 0px 20px darken($color-secondary, 30);
     object-fit: cover;
+    &:hover {
+        cursor: pointer;
+        outline: 2px solid $color-secondary;
+       @include select--portfolio;
+    }
+    @include tablette-only{
+        width: 80%;
+    }
     @include mobile-only {
         width: 100%;
         margin: 4% auto;
-    }
-    &:hover {
-        cursor: pointer;
-        @include select--portfolio;
-    }
+    }  
 }
 .project-title {
     margin: 0%;
@@ -357,10 +350,22 @@ background-color: $color-back;
     margin: 10% auto 0 auto;
     scroll-margin-top: 10vh;
     text-decoration: none;
+  
 }
 
 .contact h2 {
     background-color: $color-back;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include tablette-only{
+        display: flex;
+        flex-direction: column;
+    }
 }
 .contact-button {
     width: 16em;
@@ -371,13 +376,15 @@ background-color: $color-back;
     border-radius: 10px;
     background-color: $color-secondary;
     padding: 30px;
-    margin: 2em 0em;
+    margin: 2em 2em;
     transform: scale(1);
-    &:hover {
+    &:hover, :focus {
         cursor: pointer;
+        outline: 2px solid $color-secondary;
+        outline-offset: 0.2em;
         background-color: darken($color-secondary, 4);
         box-shadow: 0px 0px 40px lighten($color-secondary, 20);
-        transform: scale(1.1);
+        transform: scale(1.01);
     }
 }
 

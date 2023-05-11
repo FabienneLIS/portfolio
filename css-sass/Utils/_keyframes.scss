@@ -23,40 +23,19 @@
         }
     }
     
-    
-     @keyframes jello-horizontal {
-        0% {
-          -webkit-transform: scale3d(1, 1, 1);
-                  transform: scale3d(1, 1, 1);
-        }
-        30% {
-          -webkit-transform: scale3d(1.05, 0.95, 1);
-                  transform: scale3d(1.05, 0.95, 1);
-        }
-        40% {
-          -webkit-transform: scale3d(0.95, 1.05, 1);
-                  transform: scale3d(0.95, 1.05, 1);
-        }
-        50% {
-          -webkit-transform: scale3d(1.05, 0.95, 1);
-                  transform: scale3d(1.05, 0.95, 1);
-        }
-        65% {
-          -webkit-transform: scale3d(0.95, 1.05, 1);
-                  transform: scale3d(0.95, 1.05, 1);
-        }
-        75% {
-          -webkit-transform: scale3d(1.05, 0.95, 1);
-                  transform: scale3d(1.05, 0.95, 1);
-        }
-        100% {
-          -webkit-transform: scale3d(1, 1, 1);
-                  transform: scale3d(1, 1, 1);
-        }
+    @keyframes hover-object {
+      0% {
+        transform: scale(1);
+        outline-offset: 0em;
+        box-shadow: none;
       }
-  
-        
+      100% {
+        transform: scale(1.02);
+        outline-offset: 0.4em;
+        box-shadow: 0px 0px 40px lighten(#DAB6FC, 10);
+      }
+    }
+
     @mixin select--portfolio {
-        /*animation: select-items 1s forwards;*/
-        animation: jello-horizontal 2s forwards;
+        animation: hover-object 1s forwards;
     }

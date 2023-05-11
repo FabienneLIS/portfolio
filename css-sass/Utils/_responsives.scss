@@ -1,13 +1,13 @@
 //responsive
 
 $breakpointst:
-(tablette: 950px);
+(tablette: 1050px);
 
 $breakpoints:
 (mobile: 770px);
 
 $breakpointsmax:
-(max: 1800px);
+(max: 1600px);
 
 
 @mixin tablette-only {
