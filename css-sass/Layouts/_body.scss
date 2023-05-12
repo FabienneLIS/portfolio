@@ -4,8 +4,9 @@ body {
     background-attachment: fixed;
     font-family: $font-text;
     padding: 0%;
+    width: 100%;
     @include max-only {
-        max-width: 1600px;
+        max-width: 1800px;
         max-height: 1000px;
        margin: auto;
     }

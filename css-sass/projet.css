@@ -31,10 +31,11 @@ body {
   background-attachment: fixed;
   font-family: "Fira Sans Condensed, Light", Arial, Helvetica, sans-serif;
   padding: 0%;
+  width: 100%;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1800px) {
   body {
-    max-width: 1600px;
+    max-width: 1800px;
     max-height: 1000px;
     margin: auto;
   }

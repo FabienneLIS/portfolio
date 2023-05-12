@@ -31,10 +31,11 @@ body {
   background-attachment: fixed;
   font-family: "Fira Sans Condensed, Light", Arial, Helvetica, sans-serif;
   padding: 0%;
+  width: 100%;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1800px) {
   body {
-    max-width: 1600px;
+    max-width: 1800px;
     max-height: 1000px;
     margin: auto;
   }
@@ -111,6 +112,7 @@ nav {
   align-items: center;
   height: 12vh;
   width: 100%;
+  margin: 0%;
   position: sticky;
   top: 0%;
   background-color: rgba(204, 193, 255, 0.8);
@@ -176,11 +178,13 @@ nav {
 .link-choose {
   box-shadow: 0px 0px 40px #a854f8;
   border: none;
+  text-decoration: none;
   border-radius: 10px;
   background-color: #DAB6FC;
   flex-wrap: wrap;
   margin: 4% 2%;
-  padding: 0.8em 1.4em;
+  padding: 0.6em 1em;
+  text-align: center;
   transform: scale(1);
 }
 @media screen and (max-width: 770px) {
@@ -203,9 +207,10 @@ nav {
   box-shadow: 0px 0px 40px white;
   transform: scale(1.01);
 }
-
-.link-choose a {
-  text-decoration: none;
+@media screen and (max-width: 770px) {
+  .link-choose:hover {
+    outline: none;
+  }
 }
 
 header {
@@ -415,15 +420,15 @@ header p {
   margin-left: 15px;
   margin-right: 15px;
   background-color: rgba(228, 214, 255, 0.6);
-  border: solid 4px #DAB6FC;
-  box-shadow: 0px 0px 20px #9023f6;
+  border: solid 4px #a854f8;
+  box-shadow: 0px 0px 26px #7609dd;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .projet-container:hover {
   cursor: pointer;
-  outline: 2px solid #DAB6FC;
-  animation: hover-object 1s forwards;
+  outline: 4px solid #a854f8;
+  animation: hover-object 0.6s forwards;
 }
 @media screen and (max-width: 1050px) {
   .projet-container {
@@ -435,6 +440,10 @@ header p {
     width: 100%;
     margin: 4% auto;
   }
+}
+
+.projet-container a {
+  text-decoration: none;
 }
 
 .project-title {
@@ -488,7 +497,9 @@ header p {
 }
 
 .contact-button {
-  width: 16em;
+  display: block;
+  width: 10em;
+  text-align: center;
   text-decoration: none;
   border: none;
   color: #000000;
@@ -509,5 +520,8 @@ header p {
 }
 
 .contact-button a {
+  display: block;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

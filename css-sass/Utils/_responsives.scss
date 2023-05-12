@@ -7,7 +7,7 @@ $breakpoints:
 (mobile: 770px);
 
 $breakpointsmax:
-(max: 1600px);
+(max: 1800px);
 
 
 @mixin tablette-only {
@@ -27,9 +27,3 @@ $breakpointsmax:
         @content;
     }
   }
-
-@mixin max-only {
-  @media screen and (max-width: map-get($breakpointsmax, max)) {
-    @content;
-  }
-}
