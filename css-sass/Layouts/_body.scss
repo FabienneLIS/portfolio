@@ -1,18 +1,26 @@
 //body
+
+html, body {
+  height: fit-content;
+}
+html {
+  overflow: hidden;
+}
 body {
     background-image: url(../media/codebinaire.png);
     background-attachment: fixed;
     font-family: $font-text;
     padding: 0%;
     width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    margin: 0%;
+    padding: 0%;
     @include max-only {
-        max-width: 1800px;
-        max-height: 1000px;
-       margin: auto;
+        width: 1900px;
+        margin: auto;
     }
-    @include mobile-only {
-        padding: 0% 0%;
-    }
+    @include open-screen-anim;
 }
 
 a {
@@ -35,7 +43,7 @@ p
     font-size: 14px;
   }
 }
-h2,h3
+h2
 {
     font-size: 2.2em;
     letter-spacing: 0.25em;
@@ -44,4 +52,8 @@ h2,h3
         font-size: 26px;
         margin: 0px;
     }
+}
+
+h3 {
+  font-size: 1.6em;
 }

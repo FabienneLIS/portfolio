@@ -6,11 +6,31 @@
 @import "./Layouts/body";
 @import "./Layouts/footer";
 
-/*@import "./Layouts/loader";*/
-
 
 //css main page
 
+//menu up
+.menu-up {
+    display: none;
+    @include mobile-only {
+        display: block;
+        right: 0.6em;
+        bottom: 2vh;
+        background-color: rgb(218, 182, 252);
+        width: 1.4em;
+        height: 1.4em;
+        padding: 0%;
+        border: 1px solid rgb(175, 98, 248);
+        border-radius: 50%; 
+        cursor: pointer;
+    }
+}
+
+.menu-up img {
+  color: rgb(175, 98, 248);
+  width: 100%;
+  height: 100%;
+}
 
 //main
 
@@ -154,8 +174,6 @@ header
     scroll-margin-top: 10vh;
     width: 80%;
     height: 90%;
-    
-    
 }
 .about h2 {
     text-align: center;
@@ -185,6 +203,9 @@ background-color: $color-back;
 
 //compétences
 
+//soft skills
+
+//hard skills
 .skills {
     display: flex;
     flex-direction: column;
@@ -305,17 +326,15 @@ background-color: $color-back;
 }
 
 .projet-container {
-    width: 25%;
+    width: 25em;
     height: auto;
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
     background-color: $color-back;
-    border: solid 4px darken($color-secondary, 20);
-    box-shadow: 0px 0px 26px darken($color-secondary, 40);
+    text-align: center;
     object-fit: cover;
     &:hover {
-        cursor: pointer;
         outline: 4px solid darken($color-secondary, 20);
        @include select--portfolio;
     }
@@ -331,17 +350,23 @@ background-color: $color-back;
     text-decoration: none;
 }
 
-.project-title {
-    margin: 0%;
-    margin-bottom: 20px;
-    height: auto;
-    font-size: 20px;
-    text-align: center;
+.margin-text {
+    margin: 6px 0 6px 0;
 }
+.lien-github {
+    margin-top: 40px;
+    font-weight: 600;
+    color: $color-tercery;
+    cursor: pointer;
+}
+
 .container-image {
-    width: 100%;
+    width: auto;
     height: auto;
+    padding: 0%;
+    margin: 0%;
     object-fit: cover;
+    border: solid 2px darken($color-secondary, 20);
 }
 .container-image img{
     height: 100%;

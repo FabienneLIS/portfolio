@@ -26,23 +26,31 @@
     box-shadow: 0px 0px 40px #f3e7fe;
   }
 }
+html, body {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+html {
+  overflow: hidden;
+}
+
 body {
   background-image: url(../media/codebinaire.png);
   background-attachment: fixed;
   font-family: "Fira Sans Condensed, Light", Arial, Helvetica, sans-serif;
   padding: 0%;
   width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  margin: 0%;
+  padding: 0%;
+  animation: open-screen 2s forwards;
 }
-@media screen and (max-width: 1800px) {
+@media screen and (min-width: 1900px) {
   body {
-    max-width: 1800px;
-    max-height: 1000px;
+    width: 1900px;
     margin: auto;
-  }
-}
-@media screen and (max-width: 770px) {
-  body {
-    padding: 0% 0%;
   }
 }
 
@@ -69,21 +77,25 @@ p {
   }
 }
 
-h2, h3 {
+h2 {
   font-size: 2.2em;
   letter-spacing: 0.25em;
   margin-bottom: 4%;
 }
 @media screen and (max-width: 770px) {
-  h2, h3 {
+  h2 {
     font-size: 26px;
     margin: 0px;
   }
 }
 
+h3 {
+  font-size: 1.6em;
+}
+
 footer {
   background-color: rgba(204, 193, 255, 0.8);
-  height: 10%;
+  height: 4%;
   width: 100%;
   letter-spacing: 2px;
   margin-top: 1em;

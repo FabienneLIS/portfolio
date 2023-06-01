@@ -26,23 +26,31 @@
     box-shadow: 0px 0px 40px #f3e7fe;
   }
 }
+html, body {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+html {
+  overflow: hidden;
+}
+
 body {
   background-image: url(../media/codebinaire.png);
   background-attachment: fixed;
   font-family: "Fira Sans Condensed, Light", Arial, Helvetica, sans-serif;
   padding: 0%;
   width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  margin: 0%;
+  padding: 0%;
+  animation: open-screen 2s forwards;
 }
-@media screen and (max-width: 1800px) {
+@media screen and (min-width: 1900px) {
   body {
-    max-width: 1800px;
-    max-height: 1000px;
+    width: 1900px;
     margin: auto;
-  }
-}
-@media screen and (max-width: 770px) {
-  body {
-    padding: 0% 0%;
   }
 }
 
@@ -69,21 +77,25 @@ p {
   }
 }
 
-h2, h3 {
+h2 {
   font-size: 2.2em;
   letter-spacing: 0.25em;
   margin-bottom: 4%;
 }
 @media screen and (max-width: 770px) {
-  h2, h3 {
+  h2 {
     font-size: 26px;
     margin: 0px;
   }
 }
 
+h3 {
+  font-size: 1.6em;
+}
+
 footer {
   background-color: rgba(204, 193, 255, 0.8);
-  height: 10%;
+  height: 4%;
   width: 100%;
   letter-spacing: 2px;
   margin-top: 1em;
@@ -99,7 +111,30 @@ footer p {
   margin: auto 0 auto 0;
 }
 
-/*@import "./Layouts/loader";*/
+.menu-up {
+  display: none;
+}
+@media screen and (max-width: 770px) {
+  .menu-up {
+    display: block;
+    right: 0.6em;
+    bottom: 2vh;
+    background-color: rgb(218, 182, 252);
+    width: 1.4em;
+    height: 1.4em;
+    padding: 0%;
+    border: 1px solid rgb(175, 98, 248);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+.menu-up img {
+  color: rgb(175, 98, 248);
+  width: 100%;
+  height: 100%;
+}
+
 main {
   margin-top: 12vh;
   margin-bottom: 5vh;
@@ -414,19 +449,17 @@ header p {
 }
 
 .projet-container {
-  width: 25%;
+  width: 25em;
   height: auto;
   margin-bottom: 30px;
   margin-left: 15px;
   margin-right: 15px;
   background-color: rgba(228, 214, 255, 0.6);
-  border: solid 4px #a854f8;
-  box-shadow: 0px 0px 26px #7609dd;
+  text-align: center;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .projet-container:hover {
-  cursor: pointer;
   outline: 4px solid #a854f8;
   animation: hover-object 0.6s forwards;
 }
@@ -446,19 +479,25 @@ header p {
   text-decoration: none;
 }
 
-.project-title {
-  margin: 0%;
-  margin-bottom: 20px;
-  height: auto;
-  font-size: 20px;
-  text-align: center;
+.margin-text {
+  margin: 6px 0 6px 0;
+}
+
+.lien-github {
+  margin-top: 40px;
+  font-weight: 600;
+  color: rgb(181, 68, 110);
+  cursor: pointer;
 }
 
 .container-image {
-  width: 100%;
+  width: auto;
   height: auto;
+  padding: 0%;
+  margin: 0%;
   -o-object-fit: cover;
      object-fit: cover;
+  border: solid 2px #a854f8;
 }
 
 .container-image img {

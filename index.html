@@ -13,9 +13,10 @@
 	<div class="loader">
 		<div class="cercle"></div>	
 	</div>
-	
+
+
 	<!--navigation-->
-	<nav >
+	<nav id="menu">
 		<button class="nav-menu">
 			<h2>Menu</h2>
 		</button>
@@ -59,29 +60,29 @@
 			<!--compétences-->
 		<section>
 				<!--soft skills-->
-		<section class="skills div--appear" id="compétences">
+		<section class="skills" id="compétences">
 
 			<h2>Soft Skills</h2>
-		
+
 				<div class="skills-content">
 					<div class="skills-column">
 						<div class="progress-container">
 							<div>
-								<span class="progress-badge">Curiosité</span>
-								<span class="progress-value">98%</span>
+								<span class="progress-badge ">Curiosité</span>
+								<span class="progress-value">100%</span>
 							</div> 
 							<div class="progress">
-								<div class="progress-bar" style="width: 98%;"></div>	
+								<div class="progress-bar" style="width: 100%;"></div>	
 							</div>
 						</div>
 						<!-- Fin .progress-container -->
 						<div class="progress-container">
 							<div>
 								<span class="progress-badge">Capacité d’adaptation</span>
-								<span class="progress-value">80%</span>
+								<span class="progress-value">100%</span>
 							</div>
 							<div class="progress">
-								<div class="progress-bar" style="width: 80%;"></div>
+								<div class="progress-bar" style="width: 100%;"></div>
 							</div>
 						</div>
 						<!-- Fin .progress-container -->	
@@ -91,20 +92,20 @@
 						<div class="progress-container">
 							<div>
 								<span class="progress-badge">Capacité d’analyse</span>
-								<span class="progress-value">80%</span>
+								<span class="progress-value">100%</span>
 							</div>
 							<div class="progress">
-								<div class="progress-bar" style="width: 80%;"></div>
+								<div class="progress-bar" style="width: 100%;"></div>
 							</div>
 						</div>
 						<!-- Fin .progress-container -->
 						<div class="progress-container">
 							<div>
 								<span class="progress-badge">Travail en équipe</span>
-								<span class="progress-value">70%</span>
+								<span class="progress-value">100%</span>
 							</div>
 							<div class="progress">
-								<div class="progress-bar" style="width: 70%;"></div>
+								<div class="progress-bar" style="width: 100%;"></div>
 							</div>
 						</div>
 						<!-- Fin .progress-container -->
@@ -120,10 +121,10 @@
 						<div class="progress-container">
 							<div>
 								<span class="progress-badge">HTML</span>
-								<span class="progress-value">60%</span>
+								<span class="progress-value">80%</span>
 							</div> 
 							<div class="progress">
-								<div class="progress-bar" style="width: 60%;"></div>	
+								<div class="progress-bar" style="width: 80%;"></div>	
 							</div>
 						</div>
 						<!-- Fin .progress-container -->
@@ -143,10 +144,10 @@
 						<div class="progress-container">
 							<div>
 								<span class="progress-badge">CSS</span>
-								<span class="progress-value">60%</span>
+								<span class="progress-value">80%</span>
 							</div>
 							<div class="progress">
-								<div class="progress-bar" style="width: 60%;"></div>
+								<div class="progress-bar" style="width: 80%;"></div>
 							</div>
 						</div>
 						<!-- Fin .progress-container -->
@@ -170,39 +171,44 @@
 			<h2>Portfolio</h2>
 			<div class="project">
 				<div class="projet-container"> 
-					<a href="./pages/booki.html">
-						<h3 class="project-title">Booki</h3>
 					<div class="container-image">
 						<img src="media/Screenshot 2023-03-06 at 17-22-14 Le projet 2 de Fabienne LIS.png" 
 						alt="site de réservation Booki">
-					</div>	
-					</a>
-					
+					</div>
+					<a class="margin-text lien-github" href="https://fabiennelis.github.io/FabienneLIS_P2_01-10-2021/">Booki</a>
+					<p class="margin-text">HTML, CSS</p>
 					
 				</div>
 				<div class="projet-container">
-					<h3 class="project-title">Ohmyfood</h3>
+					
 					<div class="container-image">
 						<img src="media/Screenshot 2023-03-07 at 17-29-32 ohmyfood.png" 
 					alt="site de réservation 
 					Booki">
 					</div>
+					<a class="margin-text lien-github" href="https://fabiennelis.github.io/FabienneLis_P3_25-11-2021/">Ohmyfood</a>
+					<p class="margin-text">HTML, SCSS</p>
+					
 				</div>
 				<div class="projet-container">
-					<h3 class="project-title">Portfolio</h3>
 					<div class="container-image">
 						<img src="media/Screenshot 2023-03-07 at 17-30-22 Portfolio de Fabienne LIS.png" 
 					alt="site de réservation 
 					Booki">
 					</div>
+					<a class="margin-text lien-github" href="https://fabiennelis.github.io/portfolio/">Portfolio</a>
+					<p class="margin-text">HTML, SCSS, Javascript</p>
+					
 				</div>
 				<div class="projet-container">
-					<h3 class="project-title">GameOn</h3>
 					<div class="container-image">
 						<img src="media/Screenshot 2023-03-07 at 17-30-05 Reservation.png" 
 					alt="site de réservation 
 					Booki">
 					</div>
+					<a class="margin-text lien-github" href="https://fabiennelis.github.io/FabienneLIS_P4_19-01-2022/">GameOn</a>
+					<p class="margin-text">HTML, SCSS, Javascript</p>
+					
 				</div>			
 			</div>
 			
@@ -222,8 +228,9 @@
 			
 		</section>
 
+		
 	</main>
-	
+
 	<!--footer-->
     <footer>
        <p>&copy 2022 Fabienne LIS</p>
