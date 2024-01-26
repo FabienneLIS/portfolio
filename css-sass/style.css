@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  background-image: url(../media/codebinaire.png);
+  background-image: url(../media/codeB3.png);
   background-attachment: fixed;
   font-family: "Fira Sans Condensed, Light", Arial, Helvetica, sans-serif;
   padding: 0%;
@@ -103,7 +103,6 @@ footer {
   position: sticky;
   bottom: 0px;
   text-align: center;
-  align-items: center;
 }
 
 footer p {
@@ -173,9 +172,9 @@ nav {
 }
 @media screen and (max-width: 770px) {
   .nav-menu {
-    border: solid 2px #DAB6FC;
-    box-shadow: 0px 0px 40px #a854f8;
-    background-color: #DAB6FC;
+    border: solid 2px rgb(218, 181, 252);
+    box-shadow: 0px 0px 40px #a953f8;
+    background-color: rgb(218, 181, 252);
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -211,11 +210,11 @@ nav {
 }
 
 .link-choose {
-  box-shadow: 0px 0px 40px #a854f8;
+  box-shadow: 0px 0px 40px #a953f8;
   border: none;
   text-decoration: none;
   border-radius: 10px;
-  background-color: #DAB6FC;
+  background-color: rgb(218, 181, 252);
   flex-wrap: wrap;
   margin: 4% 2%;
   padding: 0.6em 1em;
@@ -231,14 +230,14 @@ nav {
     font-size: 10px;
     margin: 0px auto;
     padding: 1em 0.5em;
-    background-color: #DAB6FC;
+    background-color: rgb(218, 181, 252);
   }
 }
 .link-choose:hover {
   cursor: pointer;
-  outline: 2px solid #DAB6FC;
+  outline: 2px solid rgb(218, 181, 252);
   outline-offset: 0.2em;
-  background-color: #d0a2fb;
+  background-color: #d0a1fb;
   box-shadow: 0px 0px 40px white;
   transform: scale(1.01);
 }
@@ -263,7 +262,8 @@ header {
 
 header h1 {
   font-size: 8em;
-  background-color: rgba(228, 214, 255, 0.6);
+  background-color: rgba(228, 214, 255, 0.7);
+  padding: 2%;
 }
 @media screen and (max-width: 1050px) {
   header h1 {
@@ -277,7 +277,8 @@ header h1 {
 }
 
 header p {
-  background-color: rgba(228, 214, 255, 0.6);
+  background-color: rgba(228, 214, 255, 0.7);
+  padding: 2%;
 }
 
 .about {
@@ -293,17 +294,18 @@ header p {
 .about h2 {
   text-align: center;
   justify-content: center;
-  background-color: rgba(228, 214, 255, 0.6);
+  background-color: rgba(228, 214, 255, 0.7);
+  padding: 2%;
 }
 
 .about p {
   text-align: center;
-  background-color: rgba(228, 214, 255, 0.6);
+  background-color: rgba(228, 214, 255, 0.7);
 }
 
 .about-a {
   text-align: center;
-  background-color: rgba(228, 214, 255, 0.6);
+  background-color: rgba(228, 214, 255, 0.7);
 }
 
 .wrapper {
@@ -339,15 +341,16 @@ header p {
 }
 
 .skills h2 {
-  background-color: rgba(228, 214, 255, 0.6);
+  background-color: rgba(228, 214, 255, 0.7);
+  padding: 2%;
 }
 
 .skills-content {
   display: flex;
   flex-direction: row;
   width: 80%;
-  box-shadow: 0px 0px 40px #a854f8;
-  background-color: rgba(228, 214, 255, 0.6);
+  box-shadow: 0px 0px 40px #a953f8;
+  background-color: rgba(228, 214, 255, 0.7);
 }
 @media screen and (max-width: 1050px) {
   .skills-content {
@@ -424,7 +427,8 @@ header p {
 }
 
 .portfolio h2 {
-  background-color: rgba(228, 214, 255, 0.6);
+  background-color: rgba(228, 214, 255, 0.7);
+  padding: 2%;
 }
 
 .project {
@@ -454,13 +458,13 @@ header p {
   margin-bottom: 30px;
   margin-left: 15px;
   margin-right: 15px;
-  background-color: rgba(228, 214, 255, 0.6);
+  background-color: rgba(228, 214, 255, 0.7);
   text-align: center;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .projet-container:hover {
-  outline: 4px solid #a854f8;
+  outline: 4px solid #a953f8;
   animation: hover-object 0.6s forwards;
 }
 @media screen and (max-width: 1050px) {
@@ -497,7 +501,7 @@ header p {
   margin: 0%;
   -o-object-fit: cover;
      object-fit: cover;
-  border: solid 2px #a854f8;
+  border: solid 2px #a953f8;
 }
 
 .container-image img {
@@ -519,7 +523,8 @@ header p {
 }
 
 .contact h2 {
-  background-color: rgba(228, 214, 255, 0.6);
+  background-color: rgba(228, 214, 255, 0.7);
+  padding: 2%;
 }
 
 .buttons {
@@ -542,18 +547,18 @@ header p {
   text-decoration: none;
   border: none;
   color: #000000;
-  box-shadow: 0px 0px 40px #a854f8;
+  box-shadow: 0px 0px 40px #a953f8;
   border-radius: 10px;
-  background-color: #DAB6FC;
+  background-color: rgb(218, 181, 252);
   padding: 30px;
   margin: 2em 2em;
   transform: scale(1);
 }
 .contact-button:hover, .contact-button :focus {
   cursor: pointer;
-  outline: 2px solid #DAB6FC;
+  outline: 2px solid rgb(218, 181, 252);
   outline-offset: 0.2em;
-  background-color: #d0a2fb;
+  background-color: #d0a1fb;
   box-shadow: 0px 0px 40px white;
   transform: scale(1.01);
 }

@@ -11,6 +11,18 @@ console.log("lien");
 menuNav.addEventListener("click", openMobileNav);
 linkChoose.forEach((choose) => choose.addEventListener("click", closeMobileNav));
 
+//refresh fonction
+function refresh(){
+    var t = 1000; // rafraîchissement en millisecondes
+    setTimeout('widthWindow()',t)
+}
+
+function widthWindow() {
+    //let keepWidth = window.innerWidth
+   // refresh()
+    //return keepWidth
+}
+widthWindow()
 //modal form
 
 function openMobileNav() {
@@ -21,6 +33,7 @@ function openMobileNav() {
         } else {
             false
         } 
+        window.location.refresh()
     }
  
 

@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  background-image: url(../media/codebinaire.png);
+  background-image: url(../media/codeB3.png);
   background-attachment: fixed;
   font-family: "Fira Sans Condensed, Light", Arial, Helvetica, sans-serif;
   padding: 0%;
@@ -103,7 +103,6 @@ footer {
   position: sticky;
   bottom: 0px;
   text-align: center;
-  align-items: center;
 }
 
 footer p {
