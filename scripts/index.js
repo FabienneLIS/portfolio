@@ -47,4 +47,15 @@ function closeMobileNav() {
         }
     }
 
+//date
+
+// Obtenez la date actuelle au format souhaité (par exemple, "2023")
+const currentDate = new Date().getFullYear();
+
+// Sélectionnez l'élément span par son ID
+const datePlaceholder = document.getElementById("datePlaceholder");
+
+// Remplacez le contenu de l'élément span avec la date actuelle
+datePlaceholder.textContent = currentDate;
+
 

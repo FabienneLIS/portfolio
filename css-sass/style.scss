@@ -37,6 +37,9 @@
 main {
     margin-top: 12vh;
     margin-bottom: 5vh;
+    @include mobile-only {
+        height: 98%;
+    }
 }
 
 
@@ -140,7 +143,7 @@ nav {
 header 
   {
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
     margin: 0%;
 	display: flex;
 	align-items: center;
@@ -152,9 +155,10 @@ header
   }
 
   header h1 {
-    font-size: 8em;
+    font-size: 6em;
     background-color: $color-back;
     padding: 2%;
+    margin: 1% 0% 1% 0%;
     @include tablette-only {
         font-size: 4em;
     }
@@ -164,7 +168,9 @@ header
   }
 
   header p {
+    font-size: 2em;
     background-color: $color-back;
+    margin: 1% 0% 1% 0%;
     padding: 2%;
   }
 //présentation
@@ -178,6 +184,8 @@ header
     height: 90%;
 }
 .about h2 {
+    width: auto;
+    margin: auto;
     text-align: center;
     justify-content: center;
     background-color: $color-back;
@@ -245,46 +253,29 @@ background-color: $color-back;
         width: 100%;
     }
 }
-.skills-column {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 95%;
-    margin: 0 auto 0 auto;
-    padding: 2%;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-}
-.progress {
+.skills-content ul {
+    list-style-type: none;
     display: flex;
     flex-direction: row;
-    height: 20px;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
-    background-color: $color-font;
-    margin-top: 2%;
+    margin: 0px;
+    padding: 1% 0 1% 0;
+    @include mobile-only {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto 0 auto;
+    }
 }
-.progress-bar {
-    height: 20px;
-    background-color: $color-tercery;
-}
-.progress-container {
-    position: relative;
-    margin-top: 20px;
-    width: 100%;
+
+.skills-content li {
+    text-align: center;
     font-size: 20px;
-
-}
-.progress-value .progress-badge {
-    color: $color-font;
-    font-size: 1.25em;
-}
-.progress-badge {
-   margin-left: 2%;
-}
-.progress-value {
-    position: absolute;
-    right: 2%;
-
+    width: 50%;
+    padding: 1% 0 1% 0;
+    white-space: nowrap;
+    text-wrap: nowrap;
 }
 
 //portfolio
@@ -355,13 +346,20 @@ background-color: $color-back;
     text-decoration: none;
 }
 
+.portfolio-text {
+    position: relative;
+    left: 50%
+}
 .margin-text {
+    position: relative;
+    bottom: 1.4em;
     margin: 6px 0 6px 0;
+    background-color: $color-tercery;
+    opacity: 1;
 }
 .lien-github {
-    margin-top: 40px;
     font-weight: 600;
-    color: $color-tercery;
+    color: $color-font;
     cursor: pointer;
 }
 
