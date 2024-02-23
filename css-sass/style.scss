@@ -169,6 +169,9 @@ header
     background-color: $color-back;
     margin: 1% 0% 1% 0%;
     padding: 2%;
+    @include tablette-only {
+        font-size: 1.4em;
+    }
   }
 //présentation
 .about {

@@ -20,6 +20,9 @@ body {
         width: 1900px;
         margin: auto;
     }
+    @include mobile-only {
+      height: 98vh
+    }
     @include open-screen-anim;
 }
 

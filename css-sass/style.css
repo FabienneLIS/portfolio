@@ -53,6 +53,11 @@ body {
     margin: auto;
   }
 }
+@media screen and (max-width: 770px) {
+  body {
+    height: 98vh;
+  }
+}
 
 a {
   color: #000000;
@@ -282,6 +287,11 @@ header p {
   background-color: rgba(228, 214, 255, 0.9);
   margin: 1% 0% 1% 0%;
   padding: 2%;
+}
+@media screen and (max-width: 1050px) {
+  header p {
+    font-size: 1.4em;
+  }
 }
 
 .about {
