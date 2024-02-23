@@ -53,11 +53,6 @@ body {
     margin: auto;
   }
 }
-@media screen and (max-width: 770px) {
-  body {
-    height: 98vh;
-  }
-}
 
 a {
   color: #000000;
@@ -108,6 +103,11 @@ footer {
   position: sticky;
   bottom: 0px;
   text-align: center;
+}
+@media screen and (max-width: 770px) {
+  footer {
+    position: static;
+  }
 }
 
 footer p {

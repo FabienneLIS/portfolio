@@ -9,6 +9,9 @@ footer {
     position: sticky;
     bottom: 0px;
     text-align: center;
+    @include mobile-only {
+        position: static;
+    }
 }
 footer p {
     height: 100%;
