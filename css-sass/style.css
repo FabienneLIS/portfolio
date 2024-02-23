@@ -267,7 +267,7 @@ header {
 
 header h1 {
   font-size: 6em;
-  background-color: rgba(228, 214, 255, 0.7);
+  background-color: rgba(228, 214, 255, 0.9);
   padding: 2%;
   margin: 1% 0% 1% 0%;
 }
@@ -284,7 +284,7 @@ header h1 {
 
 header p {
   font-size: 2em;
-  background-color: rgba(228, 214, 255, 0.7);
+  background-color: rgba(228, 214, 255, 0.9);
   margin: 1% 0% 1% 0%;
   padding: 2%;
 }
@@ -304,18 +304,18 @@ header p {
   margin: auto;
   text-align: center;
   justify-content: center;
-  background-color: rgba(228, 214, 255, 0.7);
+  background-color: rgba(228, 214, 255, 0.9);
   padding: 2%;
 }
 
 .about p {
   text-align: center;
-  background-color: rgba(228, 214, 255, 0.7);
+  background-color: rgba(228, 214, 255, 0.9);
 }
 
 .about-a {
   text-align: center;
-  background-color: rgba(228, 214, 255, 0.7);
+  background-color: rgba(228, 214, 255, 0.9);
 }
 
 .wrapper {
@@ -351,7 +351,7 @@ header p {
 }
 
 .skills h2 {
-  background-color: rgba(228, 214, 255, 0.7);
+  background-color: rgba(228, 214, 255, 0.9);
   padding: 2%;
 }
 
@@ -360,7 +360,7 @@ header p {
   flex-direction: row;
   width: 80%;
   box-shadow: 0px 0px 40px #a953f8;
-  background-color: rgba(228, 214, 255, 0.7);
+  background-color: rgba(228, 214, 255, 0.9);
 }
 @media screen and (max-width: 1050px) {
   .skills-content {
@@ -418,7 +418,7 @@ header p {
 }
 
 .portfolio h2 {
-  background-color: rgba(228, 214, 255, 0.7);
+  background-color: rgba(228, 214, 255, 0.9);
   padding: 2%;
 }
 
@@ -449,7 +449,7 @@ header p {
   margin-bottom: 30px;
   margin-left: 15px;
   margin-right: 15px;
-  background-color: rgba(228, 214, 255, 0.7);
+  background-color: rgba(228, 214, 255, 0.9);
   text-align: center;
   -o-object-fit: cover;
      object-fit: cover;
@@ -480,16 +480,13 @@ header p {
 }
 
 .margin-text {
-  position: relative;
-  bottom: 1.4em;
   margin: 6px 0 6px 0;
-  background-color: rgb(181, 68, 110);
   opacity: 1;
 }
 
 .lien-github {
   font-weight: 600;
-  color: #000000;
+  color: rgb(181, 68, 110);
   cursor: pointer;
 }
 
@@ -522,7 +519,7 @@ header p {
 }
 
 .contact h2 {
-  background-color: rgba(228, 214, 255, 0.7);
+  background-color: rgba(228, 214, 255, 0.9);
   padding: 2%;
 }
 

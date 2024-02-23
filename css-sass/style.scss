@@ -351,15 +351,12 @@ background-color: $color-back;
     left: 50%
 }
 .margin-text {
-    position: relative;
-    bottom: 1.4em;
     margin: 6px 0 6px 0;
-    background-color: $color-tercery;
     opacity: 1;
 }
 .lien-github {
     font-weight: 600;
-    color: $color-font;
+    color: $color-tercery;
     cursor: pointer;
 }
 
