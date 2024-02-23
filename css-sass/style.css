@@ -138,11 +138,6 @@ main {
   margin-top: 12vh;
   margin-bottom: 5vh;
 }
-@media screen and (max-width: 770px) {
-  main {
-    height: 98%;
-  }
-}
 
 nav {
   display: flex;
@@ -254,7 +249,7 @@ nav {
 
 header {
   background-size: cover;
-  height: 90vh;
+  height: 83vh;
   margin: 0%;
   display: flex;
   align-items: center;
@@ -311,6 +306,7 @@ header p {
 .about p {
   text-align: center;
   background-color: rgba(228, 214, 255, 0.9);
+  padding: 2%;
 }
 
 .about-a {
@@ -351,6 +347,7 @@ header p {
 }
 
 .skills h2 {
+  text-align: center;
   background-color: rgba(228, 214, 255, 0.9);
   padding: 2%;
 }
