@@ -32,12 +32,6 @@ html, body {
   margin: 0;
   padding: 0;
 }
-@media screen and (max-width: 770px) {
-  html, body {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-  }
-}
 
 html {
   overflow: hidden;
@@ -59,11 +53,6 @@ body {
   body {
     width: 1900px;
     margin: auto;
-  }
-}
-@media screen and (max-width: 770px) {
-  body {
-    height: 98vh;
   }
 }
 
