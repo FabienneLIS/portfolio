@@ -49,9 +49,13 @@ body {
 }
 @media screen and (min-width: 1900px) {
   body {
-    height: 100vh;
     width: 1900px;
     margin: auto;
+  }
+}
+@media screen and (max-width: 770px) {
+  body {
+    height: auto;
   }
 }
 
