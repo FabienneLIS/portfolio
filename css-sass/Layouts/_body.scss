@@ -2,9 +2,11 @@
 
 html, body {
   height: fit-content;
+  margin: 0;
+  padding: 0;
 }
 html {
-  overflow: hidden;
+  //overflow: hidden;
 }
 body {
     background-image: url(../media/codeB3.png);
@@ -21,7 +23,7 @@ body {
         margin: auto;
     }
     @include mobile-only {
-      height: 94vh;
+      //min-height: 94vh;
     }
     @include open-screen-anim;
 }

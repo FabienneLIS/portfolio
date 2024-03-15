@@ -29,10 +29,8 @@
 html, body {
   height: -moz-fit-content;
   height: fit-content;
-}
-
-html {
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -53,12 +51,6 @@ body {
     margin: auto;
   }
 }
-@media screen and (max-width: 770px) {
-  body {
-    height: 94vh;
-  }
-}
-
 a {
   color: #000000;
   font-family: "Fira Sans Condensed, Light", Arial, Helvetica, sans-serif;
