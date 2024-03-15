@@ -59,3 +59,5 @@ const datePlaceholder = document.getElementById("datePlaceholder");
 datePlaceholder.textContent = currentDate;
 
 
+
+

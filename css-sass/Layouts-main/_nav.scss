@@ -1,0 +1,95 @@
+//nav
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    width: 100%;
+    margin: 0%;
+    position: sticky;
+    top: 0%;
+    background-color: $color-back-section;
+    z-index: 3;
+    opacity: 0.98;
+    @include mobile-only {
+        width: 100%;
+        height: auto;
+        background-color: $color-back-section;
+        opacity: 1;
+    }
+}
+
+.nav-menu {
+    display: none;
+    transform: scale(1);
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    @include mobile-only {
+        border: solid 2px $color-secondary;
+        box-shadow: 0px 0px 40px darken($color-secondary, 20);
+        background-color: $color-secondary;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: block;
+        height: auto;
+        width: 50%;
+        height: 50px;
+        z-index: 4;  
+    } 
+}
+.nav-menu h2 {
+    text-align: center;
+    margin: auto;
+    width: auto;
+    z-index: 4;
+}
+.nav-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include mobile-only {
+        display: none;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        background-color: $color-primary;
+    }
+}
+.link-choose {
+    box-shadow: 0px 0px 40px darken($color-secondary, 20);
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: $color-secondary;
+    flex-wrap: wrap;
+    margin: 4% 2%;
+    padding: 0.6em 1em;
+    text-align: center;
+    transform: scale(1);
+    @include mobile-only {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        border-radius: 0px;
+        font-size: 10px;
+        margin: 0px auto;
+        padding: 1em 0.5em;
+        background-color: $color-secondary;
+    }
+    &:hover {
+        cursor: pointer;
+        outline: 2px solid $color-secondary;
+        outline-offset: 0.2em;
+        background-color: darken($color-secondary, 4);
+        box-shadow: 0px 0px 40px lighten($color-secondary, 20);
+        transform: scale(1.01);
+        @include mobile-only{
+            outline: none;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+//contact
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    margin: 10% auto 0 auto;
+    scroll-margin-top: 10vh;
+    text-decoration: none;
+  
+}
+
+.contact h2 {
+    background-color: $color-back;
+    padding: 2%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include tablette-only{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.contact-button {
+    display: block;
+    width: 10em;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: $color-font;
+    box-shadow: 0px 0px 40px darken($color-secondary, 20);
+    border-radius: 10px;
+    background-color: $color-secondary;
+    padding: 30px;
+    margin: 2.6% auto 0 auto;
+    transform: scale(1);
+    &:hover, :focus {
+        cursor: pointer;
+        outline: 2px solid $color-secondary;
+        outline-offset: 0.2em;
+        background-color: darken($color-secondary, 4);
+        box-shadow: 0px 0px 40px lighten($color-secondary, 20);
+        transform: scale(1.01);
+    }
+}
+
+.contact-button a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.formulaire {
+display: flex;
+flex-direction: column;
+width: 50%;
+margin: 0 25% 0 25%;
+background-color: $color-back;
+@include tablette-only {
+    width: 70%;
+    margin: 0 15% 0 15%;
+}
+@include mobile-only {
+    width: 90%;
+    margin: 0 5% 0 5%;
+}
+}
+
+.formulaire div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1% 0 1% 0;
+}
+
+
+.formulaire label {
+    font-size: 20px;
+}
+
+.formulaire input {
+    height: 30px;
+}
+.formCss {
+    text-align: center;
+    background-color: $color-secondary;
+    border: solid 2px $color-secondary;
+    border-radius: 10px;
+    width: 80%;
+    &:hover {
+        border: solid 2px $color-tercery;
+    }
+}
+
+button {
+    width: 10px;
+}

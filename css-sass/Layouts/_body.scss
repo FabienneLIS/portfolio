@@ -17,6 +17,7 @@ body {
     margin: 0%;
     padding: 0%;
     @include max-only {
+        height: 100vh;
         width: 1900px;
         margin: auto;
     }

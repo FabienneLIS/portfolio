@@ -46,10 +46,10 @@
 			
 			<p>Bonjour ! Je m’appelle Fabienne Lis. <br/>
 			J’ai une formation en géographie et développement durable et des expériences
-			professionnels dans la sensibilisation et prévention des déchets. Les expériences 
+			professionnels dans la sensibilisation concernant le tri des déchets. Les expériences 
 			professionnels dans ce domaine m’ont permis de développer mes compétences dans le 
 			domaine de la communication et du travail en équipe. De plus, ma sensibilité à 
-			l’environnement font que je m’intéresse y aux thématiques de la sobriété énergétique 
+			l’environnement font que je m’intéresse aux thématiques de la sobriété énergétique 
 			et de l’obsolescence programmée. Je m’intéresse également à tout ce qui touche au 
 			domaine des logiciels libres.<br/> J’ai décidé de développer d’autres compétences 
 			lié à l’informatique. Suite à de nombreuse réflexions et stage d’initiation. 
@@ -85,6 +85,7 @@
 				<ul>
 					<li>HTML</li>
 					<li>CSS</li>
+					<li>SCSS</li>
 					<li>Javascript</li>
 					<li>Typescript</li>
 					<li>Python</li>
@@ -154,9 +155,29 @@
 		<!--contact-->
 		<section class="contact" id="contact">
 			<h2>Contact</h2>
-			<div class="buttons">
+			<!-- <div class="buttons"> 
 					<a class="contact-button" role="button" href="mailto:fabienne.lis@gmail.com">Mon contact Mail</a>
-			</div>
+			</div>-->
+
+			<form  class="formulaire" method="post">
+				<div>
+					<label class="formlabel" for="name"> Votre nom</label>
+					<input class="formCss" type="text" name="nom" id="name">
+				</div>
+				<div>
+					<label class="formlabel" for="email"> Votre email</label>
+					<input class="formCss" type="email" name="" id="email">
+				</div>
+				<div>
+					<label class="formlabel" for="titleMessage">Object de votre message</label>
+					<input class="formCss" type="text" name="titleMessage" id="titleMessage">
+				</div>
+				<div>
+					<label class="formlabel" for="message"></label>
+					<textarea class="formCss" name="message" placeholder="message" id="message" cols="30" rows="10"></textarea>
+				</div>
+				<button class="contact-button" type="submit">Envoyer</button>
+			</form>
 			
 			
 			

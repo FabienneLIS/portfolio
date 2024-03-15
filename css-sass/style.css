@@ -49,6 +49,7 @@ body {
 }
 @media screen and (min-width: 1900px) {
   body {
+    height: 100vh;
     width: 1900px;
     margin: auto;
   }
@@ -113,35 +114,6 @@ footer {
 footer p {
   height: 100%;
   margin: auto 0 auto 0;
-}
-
-.menu-up {
-  display: none;
-}
-@media screen and (max-width: 770px) {
-  .menu-up {
-    display: block;
-    right: 0.6em;
-    bottom: 2vh;
-    background-color: rgb(218, 182, 252);
-    width: 1.4em;
-    height: 1.4em;
-    padding: 0%;
-    border: 1px solid rgb(175, 98, 248);
-    border-radius: 50%;
-    cursor: pointer;
-  }
-}
-
-.menu-up img {
-  color: rgb(175, 98, 248);
-  width: 100%;
-  height: 100%;
-}
-
-main {
-  margin-top: 12vh;
-  margin-bottom: 5vh;
 }
 
 nav {
@@ -554,7 +526,7 @@ header p {
   border-radius: 10px;
   background-color: rgb(218, 181, 252);
   padding: 30px;
-  margin: 2em 2em;
+  margin: 2.6% auto 0 auto;
   transform: scale(1);
 }
 .contact-button:hover, .contact-button :focus {
@@ -571,4 +543,60 @@ header p {
   text-decoration: none;
   width: 100%;
   height: 100%;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 25% 0 25%;
+  background-color: rgba(228, 214, 255, 0.9);
+}
+@media screen and (max-width: 1050px) {
+  .formulaire {
+    width: 70%;
+    margin: 0 15% 0 15%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .formulaire {
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+}
+
+.formulaire div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1% 0 1% 0;
+}
+
+.formulaire label {
+  font-size: 20px;
+}
+
+.formulaire input {
+  height: 30px;
+}
+
+.formCss {
+  text-align: center;
+  background-color: rgb(218, 181, 252);
+  border: solid 2px rgb(218, 181, 252);
+  border-radius: 10px;
+  width: 80%;
+}
+.formCss:hover {
+  border: solid 2px rgb(181, 68, 110);
+}
+
+button {
+  width: 10px;
+}
+
+main {
+  margin-top: 12vh;
+  margin-bottom: 5vh;
 }/*# sourceMappingURL=style.css.map */
