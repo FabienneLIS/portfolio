@@ -33,6 +33,10 @@ html, body {
   padding: 0;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   background-image: url(../media/codeB3.png);
   background-attachment: fixed;
