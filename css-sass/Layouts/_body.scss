@@ -4,6 +4,10 @@ html, body {
   height: fit-content;
   margin: 0;
   padding: 0;
+  @include mobile-only {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
 }
 
 html {
@@ -25,7 +29,7 @@ body {
         margin: auto;
     }
     @include mobile-only {
-      //min-height: 94vh;
+      height: 98vh
     }
     @include open-screen-anim;
 }
