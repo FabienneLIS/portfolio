@@ -55,7 +55,7 @@ body {
 }
 @media screen and (max-width: 770px) {
   body {
-    height: auto;
+    height: 94vh;
   }
 }
 

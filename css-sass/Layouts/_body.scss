@@ -21,7 +21,7 @@ body {
         margin: auto;
     }
     @include mobile-only {
-      height: auto;
+      height: 94vh;
     }
     @include open-screen-anim;
 }
