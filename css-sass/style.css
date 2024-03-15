@@ -309,6 +309,49 @@ header p {
   border: 0.2em solid black;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1050px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.about-button {
+  display: block;
+  width: 10em;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  color: #000000;
+  box-shadow: 0px 0px 40px #a953f8;
+  border-radius: 10px;
+  background-color: rgb(218, 181, 252);
+  padding: 30px;
+  margin: 10% auto 0 auto;
+  transform: scale(1);
+}
+.about-button:hover, .about-button :focus {
+  cursor: pointer;
+  outline: 2px solid rgb(218, 181, 252);
+  outline-offset: 0.2em;
+  background-color: #d0a1fb;
+  box-shadow: 0px 0px 40px white;
+  transform: scale(1.01);
+}
+
+.about-button a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
 .skills {
   display: flex;
   flex-direction: column;
@@ -500,50 +543,8 @@ header p {
 
 .contact h2 {
   background-color: rgba(228, 214, 255, 0.9);
+  margin-bottom: 5%;
   padding: 2%;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 1050px) {
-  .buttons {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.contact-button {
-  display: block;
-  width: 10em;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  color: #000000;
-  box-shadow: 0px 0px 40px #a953f8;
-  border-radius: 10px;
-  background-color: rgb(218, 181, 252);
-  padding: 30px;
-  margin: 2.6% auto 0 auto;
-  transform: scale(1);
-}
-.contact-button:hover, .contact-button :focus {
-  cursor: pointer;
-  outline: 2px solid rgb(218, 181, 252);
-  outline-offset: 0.2em;
-  background-color: #d0a1fb;
-  box-shadow: 0px 0px 40px white;
-  transform: scale(1.01);
-}
-
-.contact-button a {
-  display: block;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
 }
 
 .formulaire {
@@ -576,6 +577,7 @@ header p {
 
 .formulaire label {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .formulaire input {
@@ -595,6 +597,49 @@ header p {
 
 button {
   width: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1050px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contact-button {
+  display: block;
+  width: 10em;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  color: #000000;
+  box-shadow: 0px 0px 40px #a953f8;
+  border-radius: 10px;
+  background-color: rgb(218, 181, 252);
+  padding: 30px;
+  margin: 10% auto 0 auto;
+  transform: scale(1);
+}
+.contact-button:hover, .contact-button :focus {
+  cursor: pointer;
+  outline: 2px solid rgb(218, 181, 252);
+  outline-offset: 0.2em;
+  background-color: #d0a1fb;
+  box-shadow: 0px 0px 40px white;
+  transform: scale(1.01);
+}
+
+.contact-button a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
 }
 
 main {
