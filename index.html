@@ -114,11 +114,13 @@
 			<h2>Portfolio</h2>
 			<div class="project">
 				<div class="projet-container"> 
-					<div class="container-image">
-						<img src="media/Screenshot 2023-03-06 at 17-22-14 Le projet 2 de Fabienne LIS.png" 
-						alt="site de réservation Booki">
-					</div>
-					<a class="margin-text lien-github" href="https://fabiennelis.github.io/FabienneLIS_P2_01-10-2021/">Booki</a>
+					<a href="pages/booki.html">
+						<div class="container-image">
+							<img src="media/Screenshot 2023-03-06 at 17-22-14 Le projet 2 de Fabienne LIS.png" 
+							alt="site de réservation Booki">
+						</div>
+						<a class="margin-text lien-github" href="https://fabiennelis.github.io/FabienneLIS_P2_01-10-2021/">Booki</a>
+					</a>
 				</div>
 				<div class="projet-container">
 					
@@ -159,24 +161,29 @@
 					<a class="contact-button" role="button" href="mailto:fabienne.lis@gmail.com">Mon contact Mail</a>
 			</div>-->
 
-			<form  class="formulaire" action="/myMail/" method="post">
+			<form  class="formulaire" method="post">
 				<div>
 					<label class="formlabel" for="name"> Votre nom</label>
 					<input class="formCss" type="text" name="nom" id="name">
+					<span class="name-error-input"></span>
 				</div>
 				<div>
 					<label class="formlabel" for="email"> Votre email</label>
-					<input class="formCss" type="email" name="" id="email">
+					<input class="formCss" type="email" name="email" id="email">
+					<span class="email-error-input"></span>
 				</div>
 				<div>
 					<label class="formlabel" for="titleMessage">Object de votre message</label>
 					<input class="formCss" type="text" name="titleMessage" id="titleMessage">
+					<span class="ttmsg-error-input"></span>
 				</div>
 				<div>
 					<label class="formlabel" for="message"></label>
 					<textarea class="formCss" name="message" placeholder="message" id="message" cols="30" rows="10"></textarea>
+					<span class="mgs-error-input"></span>
 				</div>
-				<button class="contact-button" type="submit">Envoyer</button>
+				<button class="contact-button" class="submit" type="submit">Envoyer</button>
+					<span class="sendForm"></span>
 			</form>
 			
 			
@@ -192,6 +199,8 @@
     </footer>
 </body>
 
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="scripts/index.js"></script>
 <script src="scripts/form.js"></script>
+<script src="scripts/postForm.js"></script>
 </html>

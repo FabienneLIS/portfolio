@@ -28,8 +28,8 @@ background-color: $color-back;
     margin: 0 15% 0 15%;
 }
 @include mobile-only {
-    width: 90%;
-    margin: 0 5% 0 5%;
+    width: 100%;
+    margin: 0 0 0 0;
 }
 }
 
@@ -57,10 +57,13 @@ background-color: $color-back;
     border-radius: 10px;
     width: 80%;
     &:hover {
-        border: solid 2px $color-tercery;
+        border: solid 2px darken($color: $color-secondary, $amount: 20);
     }
 }
 
+.error-color {
+    background-color: $color-tercery;
+}
 button {
     width: 10px;
 }
@@ -104,4 +107,9 @@ button {
     text-decoration: none;
     width: 100%;
     height: 100%;
+}
+
+.sendForm {
+    text-align: center;
+    margin-top: 10px;
 }

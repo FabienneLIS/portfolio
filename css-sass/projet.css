@@ -115,4 +115,118 @@ footer {
 footer p {
   height: 100%;
   margin: auto 0 auto 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+  width: 100%;
+  margin: 0%;
+  position: sticky;
+  top: 0%;
+  background-color: rgba(204, 193, 255, 0.8);
+  z-index: 3;
+  opacity: 0.98;
+}
+@media screen and (max-width: 770px) {
+  nav {
+    width: 100%;
+    height: auto;
+    background-color: rgba(204, 193, 255, 0.8);
+    opacity: 1;
+  }
+}
+
+.nav-menu {
+  display: none;
+  transform: scale(1);
+}
+.nav-menu:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 770px) {
+  .nav-menu {
+    border: solid 2px rgb(218, 181, 252);
+    box-shadow: 0px 0px 40px #a953f8;
+    background-color: rgb(218, 181, 252);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    height: auto;
+    width: 50%;
+    height: 50px;
+    z-index: 4;
+  }
+}
+
+.nav-menu h2 {
+  text-align: center;
+  margin: auto;
+  width: auto;
+  z-index: 4;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 770px) {
+  .nav-link {
+    display: none;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    background-color: rgb(187, 173, 255);
+  }
+}
+
+.link-choose {
+  box-shadow: 0px 0px 40px #a953f8;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: rgb(218, 181, 252);
+  flex-wrap: wrap;
+  margin: 4% 2%;
+  padding: 0.6em 1em;
+  text-align: center;
+  transform: scale(1);
+}
+@media screen and (max-width: 770px) {
+  .link-choose {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    border-radius: 0px;
+    font-size: 10px;
+    margin: 0px auto;
+    padding: 1em 0.5em;
+    background-color: rgb(218, 181, 252);
+  }
+}
+.link-choose:hover {
+  cursor: pointer;
+  outline: 2px solid rgb(218, 181, 252);
+  outline-offset: 0.2em;
+  background-color: #d0a1fb;
+  box-shadow: 0px 0px 40px white;
+  transform: scale(1.01);
+}
+@media screen and (max-width: 770px) {
+  .link-choose:hover {
+    outline: none;
+  }
+}
+
+main {
+  background-size: cover;
+  height: 83vh;
+  margin: 0%;
 }/*# sourceMappingURL=projet.css.map */

@@ -562,8 +562,8 @@ header p {
 }
 @media screen and (max-width: 770px) {
   .formulaire {
-    width: 90%;
-    margin: 0 5% 0 5%;
+    width: 100%;
+    margin: 0 0 0 0;
   }
 }
 
@@ -592,7 +592,11 @@ header p {
   width: 80%;
 }
 .formCss:hover {
-  border: solid 2px rgb(181, 68, 110);
+  border: solid 2px #a953f8;
+}
+
+.error-color {
+  background-color: rgb(181, 68, 110);
 }
 
 button {
@@ -640,6 +644,11 @@ button {
   text-decoration: none;
   width: 100%;
   height: 100%;
+}
+
+.sendForm {
+  text-align: center;
+  margin-top: 10px;
 }
 
 main {
