@@ -62,7 +62,7 @@ background-color: $color-back;
 }
 
 .error-color {
-    background-color: $color-tercery;
+    border: solid 4px $color-tercery;
 }
 button {
     width: 10px;

@@ -124,6 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Afficher un message de succès à l'utilisateur
                 document.querySelector('.sendForm').innerText = "Formulaire envoyé avec succès!";
                 document.querySelector('.sendForm').style.backgroundColor = "rgb(218, 181, 252);";
+                document.querySelector('.formulaire').reset();
             }, function(error) {
                 console.error('Erreur lors de l\'envoi de l\'e-mail:', error);
                 // Afficher un message d'erreur à l'utilisateur

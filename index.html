@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+	<title>Portfolio de Fabienne LIS</title>
+	<meta name="description" content="Je suis Fabienne Lis, une développeuse web junior curieuse,
+	 passionnée par la création d'expériences en ligne innovantes. Découvrez mon travail et mes projets 
+	 dans le monde du développement web.">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Fabienne LIS</title>
     <link rel="stylesheet" href="css-sass/style.css">
 </head>
 <body>
@@ -35,16 +38,16 @@
 	<main>
 	<!--accueil-->
 		<header id="accueil">
-			<h1>Fabienne Lis</h1>
-			<p>Développeuse d’application web</p>
+			<h1 tabindex="0">Fabienne Lis</h1>
+			<p tabindex="0">Développeuse d’application web</p>
 		</header>
 		
 			<!--présentation-->
 		<section class="about div--appear" id="profil">
 	
-			<h2>Présentation</h2>
+			<h2 tabindex="0">Présentation</h2>
 			
-			<p>Bonjour ! Je m’appelle Fabienne Lis. <br/>
+			<p tabindex="0">Bonjour ! Je m’appelle Fabienne Lis. <br/>
 			J’ai une formation en géographie et développement durable et des expériences
 			professionnels dans la sensibilisation concernant le tri des déchets. Les expériences 
 			professionnels dans ce domaine m’ont permis de développer mes compétences dans le 
@@ -67,43 +70,43 @@
 				<!--soft skills-->
 		<section class="skills" id="compétences">
 
-			<h2>Soft Skills</h2>
+			<h2 tabindex="0">Soft Skills</h2>
 
 				<div class="skills-content">
 					<ul>
-						<li>Curiosité</li>
-						<li>Capacité d’analyse</li>
-						<li>Capacité d’adaptation</li>
-						<li>Travail en équipe</li>
+						<li tabindex="0">Curiosité</li>
+						<li tabindex="0">Capacité d’analyse</li>
+						<li tabindex="0">Capacité d’adaptation</li>
+						<li tabindex="0">Travail en équipe</li>
 					</ul>
 				</div>
 				
 				<!--hard skills-->
-			<h2>Hard Skills</h2>
+			<h2 tabindex="0">Hard Skills</h2>
 		
 			<div class="skills-content">
 				<ul>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>SCSS</li>
-					<li>Javascript</li>
-					<li>Typescript</li>
-					<li>Python</li>
-					<li>SQL</li>
+					<li tabindex="0">HTML</li>
+					<li tabindex="0">CSS</li>
+					<li tabindex="0">SCSS</li>
+					<li tabindex="0">Javascript</li>
+					<li tabindex="0">Typescript</li>
+					<li tabindex="0">Python</li>
+					<li tabindex="0">SQL</li>
 				</ul>
 			</div>
 
 			<!--tools and software-->
-			<h2>Tools and software</h2>
+			<h2 tabindex="0">Tools and software</h2>
 
 			<div class="skills-content">
 				<ul>
-					<li>Vs Code</li>
-					<li>Git et Github</li>
-					<li>Notion</li>
-					<li>Trello</li>
-					<li>Figma</li>
-					<li>Linux</li>
+					<li tabindex="0">Vs Code</li>
+					<li tabindex="0">Git et Github</li>
+					<li tabindex="0">Notion</li>
+					<li tabindex="0">Trello</li>
+					<li tabindex="0">Figma</li>
+					<li tabindex="0">Linux</li>
 				</ul>
 			</div>
 			
@@ -111,7 +114,7 @@
 
 		<!--portfolio-->
 		<section class="portfolio" id="portfolio">
-			<h2>Portfolio</h2>
+			<h2 tabindex="0">Portfolio</h2>
 			<div class="project">
 				<div class="projet-container"> 
 					<a href="pages/booki.html">
@@ -156,29 +159,29 @@
 
 		<!--contact-->
 		<section class="contact" id="contact">
-			<h2>Contact</h2>
+			<h2 tabindex="0">Contact</h2>
 			<!-- <div class="buttons"> 
 					<a class="contact-button" role="button" href="mailto:fabienne.lis@gmail.com">Mon contact Mail</a>
 			</div>-->
 
 			<form  class="formulaire" method="post">
 				<div>
-					<label class="formlabel" for="name"> Votre nom</label>
-					<input class="formCss" type="text" name="nom" id="name">
+					<label class="formlabel" for="name" tabindex="0"> Votre nom</label>
+					<input class="formCss" type="text" name="nom" id="name" placeholder="John Smith">
 					<span class="name-error-input"></span>
 				</div>
 				<div>
-					<label class="formlabel" for="email"> Votre email</label>
-					<input class="formCss" type="email" name="email" id="email">
+					<label class="formlabel" for="email" tabindex="0"> Votre email</label>
+					<input class="formCss" type="email" name="email" id="email" placeholder="john.smith@mail.com">
 					<span class="email-error-input"></span>
 				</div>
 				<div>
-					<label class="formlabel" for="titleMessage">Object de votre message</label>
-					<input class="formCss" type="text" name="titleMessage" id="titleMessage">
+					<label class="formlabel" for="titleMessage" tabindex="0">Object de votre message</label>
+					<input class="formCss" type="text" name="titleMessage" id="titleMessage" placeholder="Bonjour">
 					<span class="ttmsg-error-input"></span>
 				</div>
 				<div>
-					<label class="formlabel" for="message"></label>
+					<label class="formlabel" for="message" tabindex="0"></label>
 					<textarea class="formCss" name="message" placeholder="message" id="message" cols="30" rows="10"></textarea>
 					<span class="mgs-error-input"></span>
 				</div>
@@ -202,5 +205,4 @@
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="scripts/index.js"></script>
 <script src="scripts/form.js"></script>
-<script src="scripts/postForm.js"></script>
 </html>

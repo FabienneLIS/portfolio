@@ -596,7 +596,7 @@ header p {
 }
 
 .error-color {
-  background-color: rgb(181, 68, 110);
+  border: solid 4px rgb(181, 68, 110);
 }
 
 button {
