@@ -42,7 +42,7 @@
 }
 
 .projet-container {
-    width: 25em;
+    width: 40em;
     height: auto;
     margin-bottom: 30px;
     margin-left: 15px;
@@ -50,9 +50,10 @@
     background-color: $color-back;
     text-align: center;
     object-fit: cover;
+    border: solid 2px darken($color-secondary, 20);
     &:hover {
-        outline: 4px solid darken($color-secondary, 20);
-       @include select--portfolio;
+        outline: 2px solid darken($color-secondary, 20);
+        @include select--portfolio;
     }
     @include tablette-only{
         width: 80%;
@@ -66,9 +67,15 @@
     text-decoration: none;
 }
 
+.portfolio-description {
+    margin-bottom: 10px;
+}
+
 .portfolio-text {
-    position: relative;
-    left: 50%
+font-size: 20px;
+@include mobile-only {
+    font-size: 16px;
+}
 }
 .margin-text {
     margin: 6px 0 6px 0;
@@ -76,17 +83,16 @@
 }
 .lien-github {
     font-weight: 600;
-    color: $color-tercery;
+    color: darken($color-secondary, 30);;
     cursor: pointer;
 }
 
 .container-image {
     width: auto;
-    height: auto;
+    height: 300px;
     padding: 0%;
     margin: 0%;
     object-fit: cover;
-    border: solid 2px darken($color-secondary, 20);
 }
 .container-image img{
     height: 100%;

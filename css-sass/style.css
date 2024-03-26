@@ -17,12 +17,10 @@
 @keyframes hover-object {
   0% {
     transform: scale(1);
-    outline-offset: 0em;
     box-shadow: none;
   }
   100% {
     transform: scale(1.02);
-    outline-offset: 0.4em;
     box-shadow: 0px 0px 40px #f3e7fe;
   }
 }
@@ -467,7 +465,7 @@ header p {
 }
 
 .projet-container {
-  width: 25em;
+  width: 40em;
   height: auto;
   margin-bottom: 30px;
   margin-left: 15px;
@@ -476,9 +474,10 @@ header p {
   text-align: center;
   -o-object-fit: cover;
      object-fit: cover;
+  border: solid 2px #a953f8;
 }
 .projet-container:hover {
-  outline: 4px solid #a953f8;
+  outline: 2px solid #a953f8;
   animation: hover-object 0.6s forwards;
 }
 @media screen and (max-width: 1050px) {
@@ -497,9 +496,17 @@ header p {
   text-decoration: none;
 }
 
+.portfolio-description {
+  margin-bottom: 10px;
+}
+
 .portfolio-text {
-  position: relative;
-  left: 50%;
+  font-size: 20px;
+}
+@media screen and (max-width: 770px) {
+  .portfolio-text {
+    font-size: 16px;
+  }
 }
 
 .margin-text {
@@ -509,18 +516,17 @@ header p {
 
 .lien-github {
   font-weight: 600;
-  color: rgb(181, 68, 110);
+  color: #9022f6;
   cursor: pointer;
 }
 
 .container-image {
   width: auto;
-  height: auto;
+  height: 300px;
   padding: 0%;
   margin: 0%;
   -o-object-fit: cover;
      object-fit: cover;
-  border: solid 2px #a953f8;
 }
 
 .container-image img {

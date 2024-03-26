@@ -24,3 +24,8 @@ Ce portfolio présente mes compétencer de développeuse web.
 
 ### IDE  
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+----
+----
+## Licence
+licence CC BY-NC 4.0 (Attribution-NonCommercial 4.0 International) 

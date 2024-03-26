@@ -26,12 +26,10 @@
     @keyframes hover-object {
       0% {
         transform: scale(1);
-        outline-offset: 0em;
         box-shadow: none;
       }
       100% {
         transform: scale(1.02);
-        outline-offset: 0.4em;
         box-shadow: 0px 0px 40px lighten(#DAB6FC, 10);
       }
     }
