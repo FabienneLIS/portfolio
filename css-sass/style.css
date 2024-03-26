@@ -529,6 +529,11 @@ header p {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 770px) {
+  .container-image {
+    height: 150px;
+  }
+}
 
 .container-image img {
   height: 100%;
