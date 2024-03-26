@@ -45,6 +45,7 @@ body {
   overflow: scroll;
   margin: 0%;
   padding: 0%;
+  scroll-behavior: smooth;
   animation: open-screen 2s forwards;
 }
 @media screen and (min-width: 1900px) {

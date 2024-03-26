@@ -57,7 +57,3 @@ const datePlaceholder = document.getElementById("datePlaceholder");
 
 // Remplacez le contenu de l'élément span avec la date actuelle
 datePlaceholder.textContent = currentDate;
-
-
-
-
