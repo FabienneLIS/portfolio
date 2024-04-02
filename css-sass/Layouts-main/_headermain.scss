@@ -27,12 +27,12 @@ header
   }
 
   header p {
-    font-size: 2em;
+    font-size: 3em;
     background-color: $color-back;
     margin: 1% 0% 1% 0%;
     padding: 2%;
     @include tablette-only {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
   }
 //présentation
@@ -54,6 +54,7 @@ header
     padding: 2%;
 }
 .about p {
+    font-size: 1.4em;
     text-align: center;
     background-color: $color-back;
     padding: 2%;
