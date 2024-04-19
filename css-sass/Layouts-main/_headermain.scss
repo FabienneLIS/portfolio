@@ -59,6 +59,9 @@ header
     text-align: left;
     background-color: $color-back;
     padding: 2%;
+    @include mobile-only {
+        font-size: 1em;
+    }
 }
 .about-a {
 text-align: center;
