@@ -42,6 +42,7 @@ header
     justify-content: flex-end;
     margin: 5% auto 5% auto;
     scroll-margin-top: 10vh;
+    max-width: 600px;
     width: 80%;
     height: 90%;
 }
@@ -55,7 +56,7 @@ header
 }
 .about p {
     font-size: 1.4em;
-    text-align: center;
+    text-align: left;
     background-color: $color-back;
     padding: 2%;
 }

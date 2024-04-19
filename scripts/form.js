@@ -90,10 +90,10 @@ function validateMsg() {
 
 
 // Appel des fonctions
-validateName();
-validateEmail();
-validateTmsg();
-validateMsg();
+// validateName();
+// validateEmail();
+// validateTmsg();
+// validateMsg();
 
 //envoyer le message
 const YOUR_SERVICE_ID = "contact_prw9pqt";
